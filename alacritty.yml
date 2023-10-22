@@ -1,0 +1,23 @@
+import:
+  - ~/.alacritty-colorscheme/themes/gruvbox_light.yaml
+
+window:
+  decorations: none
+  opacity: 0.85
+
+scrolling:
+  history: 10000
+
+font:
+  normal:
+    family: Hack
+    style: Regular
+  bold:
+    family: Hack
+    style: Bold
+  italic:
+    family: Hack
+    style: Italic
+  bold_italic:
+    family: Hack
+    style: Bold Italic
