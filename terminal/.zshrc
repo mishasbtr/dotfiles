@@ -37,7 +37,3 @@ antigen apply
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-
-# fnm
-export PATH="/home/misha/.local/share/fnm:$PATH"
-eval "`fnm env`"
