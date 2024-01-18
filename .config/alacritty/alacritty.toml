@@ -1,4 +1,4 @@
-import = [ "~/.alacritty-colorscheme/themes/gruvbox_dark.toml" ]
+import = [ "~/.config/alacritty/themes/gruvbox_dark.toml" ]
 
 [window]
 decorations = "none"
