@@ -47,10 +47,13 @@ bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/brightness
 bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/brightness.sh decrease
 
 # use picom for enabling blur
-exec_always --no-startup-id picom -bc
+exec_always --no-startup-id picom -bc --config ~/.config/picom/picom.conf
 
 # set wallpaper
-exec_always --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/spaceman-gruv.jpg
+exec_always --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/samurai.jpg
+
+# redshift
+exec_always --no-startup-id redshift
 
 
 # Font for window titles. Will also be used by the bar unless a different font
