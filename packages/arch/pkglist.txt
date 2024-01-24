@@ -36,6 +36,7 @@ qbittorrent
 qbittorrent
 rnote
 rofi
+rofi-power-menu
 spotify
 telegram-desktop
 tldr
