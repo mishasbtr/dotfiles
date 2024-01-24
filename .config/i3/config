@@ -8,7 +8,7 @@
 # To get a config file with the same key positions, but for your current
 # layout, use the i3-config-wizard
 
-include ./kde_i3/kde.conf
+include ~/.config/i3/kde_i3/kde.conf
 
 no_focus [class="plasmashell" window_type="notification"]
 
@@ -79,6 +79,7 @@ bindsym $mod+q kill
 # A more modern dmenu replacement is rofi:
 bindsym $mod+d exec "rofi -modi drun -show drun -theme gruvbox-dark -show-icons"
 bindsym $mod+t exec "rofi -modi windowcd -show windowcd -theme gruvbox-dark -show-icons"
+bindsym $mod+b exec "rofi -show p -modi p:rofi-power-menu -theme gruvbox-dark -show-icons"
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindsym Mod1+d exec --no-startup-id i3-dmenu-desktop
@@ -209,7 +210,6 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-
 bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -230,6 +230,10 @@ bar {
         urgent_workspace   #3c3836 #cc241d #fbf1c7
       }
 }
+# 
+# bar {
+#   status_command i3blocks
+# }
 
 #######################
 # Colorscheme
