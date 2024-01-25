@@ -53,4 +53,5 @@ vim
 visual-studio-code-bin
 yay
 zoom
+zotero-bin
 zsh
