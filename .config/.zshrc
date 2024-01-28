@@ -40,6 +40,7 @@ export GTK_THEME=Gruvbox-Dark-BL-LB:dark
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # pnpm
 export PNPM_HOME="/home/misha/.local/share/pnpm"
@@ -48,3 +49,8 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+export VISUAL=nvim
+export EDITOR=nvim
+export TERMINAL=alacritty
+
