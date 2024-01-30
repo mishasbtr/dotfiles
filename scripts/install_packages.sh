@@ -17,3 +17,7 @@ yay -S --needed --noconfirm - <../packages/pkglist.txt
 cd
 git clone https://github.com/gpakosz/.tmux.git
 cd -
+
+# install pnpm
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+pnpm env use --global lts
