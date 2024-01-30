@@ -12,3 +12,8 @@ rm -rf yay
 
 # install packages
 yay -S --needed --noconfirm - <../packages/pkglist.txt
+
+# install tmux plugin manager
+cd
+git clone https://github.com/gpakosz/.tmux.git
+cd -
