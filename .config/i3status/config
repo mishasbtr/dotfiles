@@ -12,12 +12,12 @@ general {
         color_good = "#98971a"
         color_bad = "#cc241d"
         color_degraded = "#d65d0e"
+        output_format = "i3bar"
 }
 
 # order += "ipv6"
 order += "wireless _first_"
-order += "cpu_temperature 0"
-order += "cpu_temperature 1"
+#order += "exec_temperature"
 # order += "ethernet _first_"
 order += "battery all"
 order += "disk /"
@@ -55,14 +55,4 @@ memory {
 
 tztime local {
         format = "%Y-%m-%d %H:%M:%S"
-}
-
-cpu_temperature 0 {
-        format = "CPU: %degrees °C"
-        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon8/temp2_input"
-}
-
-cpu_temperature 1 {
-        format = "CPU: %degrees °C"
-        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon9/temp2_input"
 }

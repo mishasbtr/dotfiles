@@ -18,7 +18,7 @@ tiling_drag modifier titlebar
 # Add borders for all windows
 bar {
       status_command i3status
-      mode dock
+      mode hide
       height 20
       colors {
         background #282828
@@ -34,6 +34,5 @@ bar {
 }
 for_window [class="^.*"] border pixel 1
 
-# Set delay and repeat rate
-exec --no-startup-id xset r rate 200 35
+
 

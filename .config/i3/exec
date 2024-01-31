@@ -24,3 +24,13 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager applet
 exec --no-startup-id nm-applet
+
+# Launch polybar
+exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+# Set delay and repeat rate
+exec --no-startup-id xset r rate 200 35
+
+# Set inputs
+exec_always --no-startup-id setxkbmap -layout us,ru -option grp:win_space_toggle
+
