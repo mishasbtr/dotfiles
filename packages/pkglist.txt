@@ -2,12 +2,14 @@ alacritty
 antigen
 arandr
 bitwarden
+blueman
 calibre
 discord
 dmenu
 dolphin
 dropbox
 dropbox-cli
+dunst
 elisa
 evince
 firefox
@@ -21,6 +23,7 @@ i3lock
 i3status
 jetbrains-toolbox
 libreoffice-fresh
+lm_sensors
 neofetch
 neovim
 networkmanager
@@ -30,6 +33,7 @@ networkmanager-qt5
 obs-studio
 obsidian-bin
 picom
+polybar
 pyenv
 pyenv
 qbittorrent
@@ -51,6 +55,7 @@ ttf-opensans
 ungoogled-chromium-bin
 vim
 visual-studio-code-bin
+xss-lock
 yay
 zoom
 zotero-bin
