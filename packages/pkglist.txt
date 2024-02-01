@@ -40,6 +40,7 @@ pyenv
 pyenv
 qbittorrent
 qbittorrent
+redshift
 rnote
 rofi
 rofi-power-menu
