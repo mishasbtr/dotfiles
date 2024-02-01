@@ -1,14 +1,19 @@
-# use picom for enabling blur
+# Use picom for enabling blur
 exec_always --no-startup-id picom -bc --config ~/.config/picom/picom.conf
-# set wallpaper
+
+# Set wallpaper
 exec_always --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/samurai.jpg
+
 # redshift
 exec --no-startup-id redshift
-# swpa escape and caps lock
+
+# Swap escape and caps lock
 exec_always --no-startup-id setxkbmap -option caps:swapescape
-# natural scrolling for trackpad
+
+# Natural scrolling for trackpad
 exec_always --no-startup-id xinput set-prop 'Synaptics TM3471-020' 'libinput Natural Scrolling Enabled' 1
-# trackpoint speed
+
+# Trackpoint speed
 exec_always --no-startup-id xinput set-prop 'TPPS/2 Elan TrackPoint' 'libinput Accel Speed' 0.2
 
 # Start XDG autostart .desktop files using dex. See also
