@@ -16,22 +16,22 @@ floating_modifier Mod1
 tiling_drag modifier titlebar
 
 # Add borders for all windows
-bar {
-      status_command i3status
-      mode hide
-      height 20
-      colors {
-        background #282828
-
-        statusline #ebdbb2
-        separator  #458588
-
-        focused_workspace  #458588 #282828 #ebdbb2
-        active_workspace   #3c3836 #504945 #fbf1c7
-        inactive_workspace #3c3836 #282828 #928374
-        urgent_workspace   #3c3836 #cc241d #fbf1c7
-      }
-}
+#bar {
+#      status_command i3status
+#      mode hide
+#      height 20
+#      colors {
+#        background #282828
+#
+#        statusline #ebdbb2
+#        separator  #458588
+#
+#        focused_workspace  #458588 #282828 #ebdbb2
+#        active_workspace   #3c3836 #504945 #fbf1c7
+#        inactive_workspace #3c3836 #282828 #928374
+#        urgent_workspace   #3c3836 #cc241d #fbf1c7
+#      }
+#}
 for_window [class="^.*"] border pixel 1
 
 

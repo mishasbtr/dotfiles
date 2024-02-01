@@ -1,12 +1,18 @@
 #!/bin/bash
+(
+  flock 200
 
-# Terminate already running bar instances
-killall -q polybar
-# If all your bars have ipc enabled, you can also use
-# polybar-msg cmd quit
+  killall -q polybar
 
-# Launch Polybar, using default config location ~/.config/polybar/config.ini
-polybar example 2>&1 | tee -a /tmp/polybar.log &
-disown
+  while pgrep -u $UID -x polybar > /dev/null; do sleep 0.5; done
 
-echo "Polybar launched..."
+  outputs=$(polybar --list-monitors | cut -d":" -f1)
+  tray_output=eDP-1
+
+  for m in $outputs; do
+    export MONITOR=$m
+
+    polybar --reload main </dev/null >/var/tmp/polybar-$m.log 2>&1 200>&- &
+    disown
+  done
+) 200>/var/tmp/polybar-launch.lock

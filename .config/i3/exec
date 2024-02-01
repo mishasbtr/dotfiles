@@ -36,3 +36,6 @@ exec_always --no-startup-id setxkbmap -layout us,ru -option grp:win_space_toggle
 
 # Enable notifications
 exec --no-startup-id dunst
+
+# Map wacom tablet to laptop screen
+exec --no-startup-id xsetwacom set "Wacom Intuos BT M Pen stylus" MapToOutput eDP-1
