@@ -1,6 +1,7 @@
 alacritty
 antigen
 arandr
+autorandr
 bitwarden
 blueman
 calibre
