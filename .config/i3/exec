@@ -34,3 +34,5 @@ exec --no-startup-id xset r rate 200 35
 # Set inputs
 exec_always --no-startup-id setxkbmap -layout us,ru -option grp:win_space_toggle
 
+# Enable notifications
+exec --no-startup-id dunst
