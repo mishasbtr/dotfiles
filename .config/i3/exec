@@ -5,7 +5,7 @@ exec_always --no-startup-id picom -bc --config ~/.config/picom/picom.conf
 exec_always --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/samurai.jpg
 
 # Enable redshift
-exec_always --no-startup-id redshift -l 52.2297:21.0122
+exec --no-startup-id redshift
 
 # Swap escape and caps lock
 exec_always --no-startup-id setxkbmap -option caps:swapescape
