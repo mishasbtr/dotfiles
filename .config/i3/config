@@ -17,6 +17,4 @@ tiling_drag modifier titlebar
 
 # Add borders for all windows
 for_window [class="^.*"] border pixel 1
-
-
-
+for_window [title="^zoom$" class="[zoom]*"] floating enable
