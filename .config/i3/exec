@@ -25,7 +25,24 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i ~/dotfiles/wallpapers/gruvbox_space_anime_wallpaper_white.png --nofork 
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock \
+    -i ~/dotfiles/wallpapers/gruvbox_space_anime_wallpaper_white.png \
+    --ring-color=282828 \
+    --inside-color=282828 \
+    --ringwrong-color=cc241d \
+    --insidewrong-color=cc241d \
+    --ringver-color=b16286 \
+    --insidever-color=b16286 \
+    --keyhl-color=bdae93 \
+    --bshl-color=d65d0e \
+    --verif-color=ebdbb2 \
+    --layout-color=ebdbb2 \
+    --time-color=ebdbb2 \
+    --date-color=ebdbb2 \
+    --greeter-color=ebdbb2 \
+    -k \
+    --keylayout 2 \
+    --nofork
 
 # NetworkManager applet
 exec --no-startup-id nm-applet
@@ -34,7 +51,7 @@ exec --no-startup-id nm-applet
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Set delay and repeat rate
-exec --no-startup-id xset r rate 200 35
+exec_always --no-startup-id xset r rate 200 35
 
 # Set inputs
 exec_always --no-startup-id setxkbmap -layout us,ru -option grp:win_space_toggle
