@@ -23,7 +23,7 @@ haruna
 htop
 i3-wm
 i3blocks
-i3lock
+i3lock-color
 i3status
 jetbrains-toolbox
 libreoffice-fresh
