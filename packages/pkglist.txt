@@ -58,6 +58,7 @@ ttf-hack-nerd
 ttf-hack-nerd
 ttf-liberation
 ttf-opensans
+udiskie
 udisks2
 ungoogled-chromium-bin
 vim
