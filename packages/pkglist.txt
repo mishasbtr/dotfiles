@@ -4,6 +4,7 @@ arandr
 autorandr
 bitwarden
 blueman
+caffeine-ng
 calibre
 discord
 dmenu

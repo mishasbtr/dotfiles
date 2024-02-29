@@ -15,6 +15,10 @@ floating_modifier Mod1
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
+# set window title icons
+for_window [all] title_window_icon on
+for_window [all] title_window_icon padding 8px
+
 # Add borders for all windows
-for_window [class="^.*"] border pixel 1
+for_window [all] border pixel 1
 for_window [title="^zoom$" class="[zoom]*"] floating enable
