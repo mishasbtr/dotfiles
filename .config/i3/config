@@ -1,23 +1,6 @@
+include ~/.config/i3/appearance
 include ~/.config/i3/colorscheme
-include ~/.config/i3/keybindings
 include ~/.config/i3/exec
-
-# Font for window titles
-font pango: Hack Nerd Font 9
-
-gaps inner 5px
-
-# use Mouse+Mod1 to drag floating windows to their wanted position
-floating_modifier Mod1
-
-# move tiling windows via drag & drop by left-clicking into the title bar,
-# or left-clicking anywhere into the window while holding the floating modifier.
-tiling_drag modifier titlebar
-
-# set window title icons
-for_window [all] title_window_icon on
-for_window [all] title_window_icon padding 8px
-
-# Add borders for all windows
-for_window [all] border pixel 1
-for_window [title="^zoom$" class="[zoom]*"] floating enable
+include ~/.config/i3/keybindings
+include ~/.config/i3/modifiers
+include ~/.config/i3/windowrules

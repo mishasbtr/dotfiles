@@ -1,0 +1,4 @@
+# Font for window titles
+font pango: Hack Nerd Font 9
+
+gaps inner 5px
