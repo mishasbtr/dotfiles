@@ -1,7 +1,3 @@
-
-#######################
-# Colorscheme
-#######################
 # class                 border   background text    indicator child_border
 client.focused          #d65d0e  #32302f    #ebdbb2 #458588   #d65d0e
 client.focused_inactive #ebdbb2  #32302f    #ebdbb2 #458588   #1d2021

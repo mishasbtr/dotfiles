@@ -1,6 +1,6 @@
-include ~/.config/i3/appearance
-include ~/.config/i3/colorscheme
-include ~/.config/i3/exec
-include ~/.config/i3/keybindings
-include ~/.config/i3/modifiers
-include ~/.config/i3/windowrules
+include ~/.config/i3/logic/modifiers
+include ~/.config/i3/logic/exec
+include ~/.config/i3/logic/keybindings
+include ~/.config/i3/ui/colorscheme
+include ~/.config/i3/ui/appearance
+include ~/.config/i3/ui/windowrules
