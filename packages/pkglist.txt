@@ -48,6 +48,7 @@ redshift
 rnote
 rofi
 rofi-power-menu
+rustup
 spotify
 telegram-desktop
 tldr
