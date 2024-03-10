@@ -4,6 +4,7 @@ arandr
 autorandr
 bitwarden
 blueman
+bluetoothctl
 caffeine-ng
 calibre
 discord
