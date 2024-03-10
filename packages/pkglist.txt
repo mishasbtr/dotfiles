@@ -2,6 +2,7 @@ alacritty
 antigen
 arandr
 autorandr
+bc
 bitwarden
 blueman
 bluetoothctl
@@ -27,6 +28,7 @@ i3blocks
 i3lock-color
 i3status
 jetbrains-toolbox
+lazygit
 libreoffice-fresh
 lm_sensors
 neofetch
@@ -65,6 +67,7 @@ udisks2
 ungoogled-chromium-bin
 vim
 visual-studio-code-bin
+xclip
 xss-lock
 yay
 zoom
