@@ -34,6 +34,7 @@ flameshot
 galculator
 git
 github-cli
+gruvbox-lus-icon-theme-git
 gvfs
 gvfs-afc
 gvfs-gphoto2
@@ -70,9 +71,11 @@ picom
 playerctl
 polkit-gnome
 polybar
+power-profiles-daemon
 powreprofilectl
 pyenv
 qbittorrent
+qt6ct
 redshift
 rnote
 rofi
@@ -105,6 +108,7 @@ xdg-user-dirs-gtk
 xed
 xfce4-terminal
 xorg-xdpyinfo
+xorg-xinput
 xss-lock
 yay
 zoom
