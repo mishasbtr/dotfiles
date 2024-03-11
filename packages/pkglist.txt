@@ -13,6 +13,8 @@ blueman
 bluetoothctl
 caffeine-ng
 calibre
+ddcui
+ddcutil
 dex
 discord
 dmenu
