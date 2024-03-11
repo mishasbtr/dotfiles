@@ -1,4 +1,5 @@
 acpi
+man-db
 acpilight
 alacritty
 antigen
