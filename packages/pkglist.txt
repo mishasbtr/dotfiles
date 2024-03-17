@@ -67,6 +67,7 @@ networkmanager
 networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-qt5
+noto-fonts-emoji
 numlockx
 obs-studio
 obsidian-bin
@@ -105,10 +106,12 @@ udisks2
 ungoogled-chromium-bin
 vim
 visual-studio-code-bin
+wacomtablet
 xbindkeys
 xclip
 xdg-user-dirs-gtk
 xed
+xf86-input-wacom
 xfce4-terminal
 xorg-xdpyinfo
 xorg-xinput
