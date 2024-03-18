@@ -5,3 +5,5 @@
 local opt = vim.opt
 
 opt.clipboard = ""
+
+vim.g.camelcasemotion_key = "\\"

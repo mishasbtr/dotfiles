@@ -3,7 +3,6 @@ acpilight
 alacritty
 antigen
 arandr
-arc-gtk-theme-eos
 archlinux-xdg-menu
 autorandr
 awesome-terminal-fonts
@@ -22,10 +21,6 @@ dolphin
 dropbox
 dunst
 elisa
-endeavouros-xfce4-terminal-colors
-eos-lightdm-slick-theme
-eos-qogir-icons
-eos-settings-i3wm
 evince
 feh
 file-roller
@@ -33,7 +28,6 @@ firefox
 firewall-config
 firewalld
 flameshot
-galculator
 git
 github-cli
 gruvbox-lus-icon-theme-git
