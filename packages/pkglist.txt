@@ -22,6 +22,7 @@ dropbox
 dunst
 elisa
 evince
+fd
 feh
 file-roller
 firefox
