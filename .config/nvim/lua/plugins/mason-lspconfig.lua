@@ -7,6 +7,7 @@ return {
       mdx_analyzer = {},
       cssls = {},
       cssmodules_ls = {},
+      somesass_ls = {},
     },
   },
 }
