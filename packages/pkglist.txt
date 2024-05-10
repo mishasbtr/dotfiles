@@ -73,6 +73,7 @@ polybar
 power-profiles-daemon
 powreprofilectl
 pyenv
+python-pulsectl
 qbittorrent
 qt6ct
 redshift
