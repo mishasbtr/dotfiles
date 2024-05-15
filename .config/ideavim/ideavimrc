@@ -9,3 +9,6 @@ Plug 'kana/vim-textobj-entire'
 
 nmap <C-W>q :action CloseEditor<CR>
 
+set ignorecase
+set smartcase
+
