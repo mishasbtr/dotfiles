@@ -7,9 +7,6 @@ exec_always --no-startup-id feh --bg-fill ~/dotfiles/wallpapers/dark_sea.jpg
 # Enable redshift
 exec --no-startup-id redshift
 
-# Swap escape and caps lock
-exec_always --no-startup-id setxkbmap -option caps:swapescape
-
 # Natural scrolling for trackpad
 exec_always --no-startup-id xinput set-prop 'Synaptics TM3471-020' 'libinput Natural Scrolling Enabled' 1
 
@@ -52,9 +49,6 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Set delay and repeat rate
 exec_always --no-startup-id xset r rate 200 35
-
-# Set inputs
-exec_always --no-startup-id setxkbmap -layout us,ru,ua -option grp:win_space_toggle
 
 # Enable notifications
 exec --no-startup-id dunst
