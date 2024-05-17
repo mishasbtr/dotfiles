@@ -2,6 +2,7 @@
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
 
+-- all this stuff is needed for blameline to work
 local autocmd = vim.api.nvim_create_autocmd
 
 local function augroup(name)
@@ -15,3 +16,5 @@ autocmd({ "BufEnter" }, {
     vim.cmd("EnableBlameLine")
   end,
 })
+
+-- end of blameline stuff
