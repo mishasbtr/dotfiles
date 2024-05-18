@@ -7,10 +7,10 @@ power_profile_print() {
           printf "󱐋"
           ;;
         "balanced")
-          printf ""
+          printf " "
           ;;
         "power-saver")
-          printf ""
+          printf " "
           ;;
         *)
           printf "power profile: $REPLY"
