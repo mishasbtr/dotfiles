@@ -48,9 +48,6 @@ exec --no-startup-id nm-applet
 # Launch polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
-# Set delay and repeat rate
-exec_always --no-startup-id xset r rate 200 35
-
 # Enable notifications
 exec --no-startup-id dunst
 
