@@ -4,7 +4,9 @@ return {
     ensure_installed = {
       "angular",
       "astro",
-      "lua",
+      "css",
+      "scheme",
+      "scss",
     },
   },
 }

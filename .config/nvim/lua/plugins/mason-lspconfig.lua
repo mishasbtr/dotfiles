@@ -8,6 +8,7 @@ return {
       cssls = {},
       cssmodules_ls = {},
       somesass_ls = {},
+      schemals = {},
     },
   },
 }
