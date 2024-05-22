@@ -56,6 +56,26 @@ function show_brightness_notif {
 	dunstify -t 1000 -r 2593 -u normal "$brightness_icon   $brightness%" -h int:value:$brightness -h string:hlcolor:$bar_color
 }
 
+function increase_brightness {
+  current_brightness=$(get_brightness)
+  new_brightness=$(echo "$current_brightness + $brightness_step" | bc)
+  new_brightness=$(printf "%.0f" $new_brightness)
+	if [ $new_brightness -gt 100 ]; then
+	    new_brightness=100
+	fi
+	xbacklight -set $new_brightness -time 0
+}
+
+function decrease_brightness {
+  current_brightness=$(get_brightness)
+  new_brightness=$(echo "$current_brightness - $brightness_step" | bc)
+  new_brightness=$(printf "%.0f" $new_brightness)
+  if [ $new_brightness -lt 0 ]; then
+      new_brightness=0
+  fi
+  xbacklight -set $new_brightness -time 0
+}
+
 # Main function - Takes user input, "volume_up", "volume_down", "brightness_up", or "brightness_down"
 case $1 in
 volume_up)
@@ -83,14 +103,12 @@ volume_mute)
 	;;
 
 brightness_up)
-	# Increases brightness and displays the notification
-	xbacklight -inc $brightness_step -time 0
+  increase_brightness
 	show_brightness_notif
 	;;
 
 brightness_down)
-	# Decreases brightness and displays the notification
-	xbacklight -dec $brightness_step -time 0
+  decrease_brightness
 	show_brightness_notif
 	;;
 esac
