@@ -7,9 +7,19 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
+
+local extrasBase = "lazyvim.plugins.extras."
+local coding = extrasBase .. "coding."
+local editor = extrasBase .. "editor."
+local formatting = extrasBase .. "formatting."
+local lang = extrasBase .. "lang."
+local linting = extrasBase .. "linting."
+local test = extrasBase .. "test."
+local ui = extrasBase .. "ui."
+local util = extrasBase .. "util."
+
 require("lazy").setup({
   spec = {
-    -- add LazyVim and import its plugins
     {
       "LazyVim/LazyVim",
       import = "lazyvim.plugins",
@@ -18,49 +28,42 @@ require("lazy").setup({
       },
     },
     -- import any extras modules here
-    { import = "lazyvim.plugins.extras.coding.copilot" },
-    { import = "lazyvim.plugins.extras.coding.copilot-chat" },
-    { import = "lazyvim.plugins.extras.coding.mini-comment" },
-    { import = "lazyvim.plugins.extras.coding.mini-surround" },
-    { import = "lazyvim.plugins.extras.coding.yanky" },
-    { import = "lazyvim.plugins.extras.dap.core" },
-    { import = "lazyvim.plugins.extras.editor.aerial" },
-    { import = "lazyvim.plugins.extras.editor.harpoon2" },
-    { import = "lazyvim.plugins.extras.editor.mini-diff" },
-    { import = "lazyvim.plugins.extras.editor.navic" },
-    { import = "lazyvim.plugins.extras.editor.refactoring" },
-    { import = "lazyvim.plugins.extras.editor.trouble-v3" },
-    { import = "lazyvim.plugins.extras.formatting.black" },
-    { import = "lazyvim.plugins.extras.formatting.prettier" },
-    { import = "lazyvim.plugins.extras.lang.ansible" },
-    { import = "lazyvim.plugins.extras.lang.clangd" },
-    { import = "lazyvim.plugins.extras.lang.cmake" },
-    { import = "lazyvim.plugins.extras.lang.docker" },
-    { import = "lazyvim.plugins.extras.lang.java" },
-    { import = "lazyvim.plugins.extras.lang.json" },
-    { import = "lazyvim.plugins.extras.lang.markdown" },
-    { import = "lazyvim.plugins.extras.lang.omnisharp" },
-    { import = "lazyvim.plugins.extras.lang.python" },
-    { import = "lazyvim.plugins.extras.lang.rust" },
-    { import = "lazyvim.plugins.extras.lang.tailwind" },
-    { import = "lazyvim.plugins.extras.lang.typescript" },
-    { import = "lazyvim.plugins.extras.lang.yaml" },
-    { import = "lazyvim.plugins.extras.linting.eslint" },
-    { import = "lazyvim.plugins.extras.test.core" },
-    { import = "lazyvim.plugins.extras.ui.mini-indentscope" },
-    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
-    { import = "lazyvim.plugins.extras.util.project" },
-    -- import/override with your plugins
+    { import = coding .. "copilot" },
+    { import = coding .. "copilot-chat" },
+    { import = coding .. "mini-comment" },
+    { import = coding .. "mini-surround" },
+    { import = coding .. "yanky" },
+    { import = editor .. "aerial" },
+    { import = editor .. "harpoon2" },
+    { import = editor .. "mini-diff" },
+    { import = editor .. "navic" },
+    { import = editor .. "refactoring" },
+    { import = editor .. "trouble-v3" },
+    { import = formatting .. "black" },
+    { import = formatting .. "prettier" },
+    { import = lang .. "ansible" },
+    { import = lang .. "clangd" },
+    { import = lang .. "cmake" },
+    { import = lang .. "docker" },
+    { import = lang .. "java" },
+    { import = lang .. "json" },
+    { import = lang .. "markdown" },
+    { import = lang .. "omnisharp" },
+    { import = lang .. "python" },
+    { import = lang .. "rust" },
+    { import = lang .. "tailwind" },
+    { import = lang .. "typescript" },
+    { import = lang .. "yaml" },
+    { import = linting .. "eslint" },
+    { import = test .. "core" },
+    { import = ui .. "mini-indentscope" },
+    { import = util .. "mini-hipatterns" },
+    { import = util .. "project" },
     { import = "plugins" },
   },
   defaults = {
-    -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
-    -- If you know what you're doing, you can set this to `true` to have all your custom plugins lazy-loaded by default.
     lazy = false,
-    -- It's recommended to leave version=false for now, since a lot the plugin that support versioning,
-    -- have outdated releases, which may break your Neovim install.
-    version = false, -- always use the latest git commit
-    -- version = "*", -- try installing the latest stable version for plugins that support semver
+    version = false,
   },
   install = { colorscheme = { "gruvbox" } },
   checker = { enabled = true }, -- automatically check for plugin updates
