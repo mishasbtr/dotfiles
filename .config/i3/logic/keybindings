@@ -150,4 +150,5 @@ bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/volume_b
 
 bindsym $mod+n exec chromium
 bindsym $mod+p exec elisa
+bindsym $mod+g exec telegram-desktop
 bindsym Print exec "flameshot gui"
