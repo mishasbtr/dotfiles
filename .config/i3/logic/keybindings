@@ -5,9 +5,6 @@ set $down j
 set $left h
 set $right l
 
-# start a terminal
-bindsym $mod+Return exec alacritty
-
 # kill focused window
 bindsym $mod+q kill
 
@@ -149,6 +146,8 @@ bindsym XF86AudioMicMute exec amixer sset Capture toggle
 bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_up
 bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_down
 
+bindsym $mod+Shift+Return exec alacritty
+bindsym $mod+Return exec ~/.config/i3/scripts/run_or_switch.sh alacritty
 bindsym $mod+n exec ~/.config/i3/scripts/run_or_switch.sh chromium
 bindsym $mod+p exec ~/.config/i3/scripts/run_or_switch.sh elisa
 bindsym $mod+g exec ~/.config/i3/scripts/run_or_switch.sh telegram-desktop
