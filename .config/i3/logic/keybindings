@@ -148,7 +148,8 @@ bindsym XF86AudioMicMute exec amixer sset Capture toggle
 bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_up
 bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_down
 
-bindsym $mod+n exec chromium
-bindsym $mod+p exec elisa
-bindsym $mod+g exec telegram-desktop
+bindsym $mod+n exec ~/.config/i3/scripts/run_or_switch.sh chromium
+bindsym $mod+p exec ~/.config/i3/scripts/run_or_switch.sh elisa
+bindsym $mod+g exec ~/.config/i3/scripts/run_or_switch.sh telegram-desktop
+
 bindsym Print exec "flameshot gui"

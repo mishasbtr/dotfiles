@@ -103,6 +103,7 @@ ungoogled-chromium-bin
 vim
 visual-studio-code-bin
 wacomtablet
+wmctrl
 xbindkeys
 xclip
 xdg-user-dirs-gtk
