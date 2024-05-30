@@ -1,5 +1,14 @@
 #!/bin/sh
 
+# enable natural scrolling for trackpad
+xinput set-prop 'Synaptics TM3471-020' 'libinput Natural Scrolling Enabled' 1
+# set trackpoint speed
+xinput set-prop 'TPPS/2 Elan TrackPoint' 'libinput Accel Speed' 0.2
+
+# keyboard repeat delay and rate
 xset r rate 200 35
+
+# swap caps and esc
 setxkbmap -option caps:swapescape
+# keybindings for switching between keyboard layouts
 setxkbmap -layout us,ru,ua -option grp:win_space_toggle
