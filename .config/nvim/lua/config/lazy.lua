@@ -38,7 +38,6 @@ require("lazy").setup({
     { import = editor .. "mini-diff" },
     { import = editor .. "navic" },
     { import = editor .. "refactoring" },
-    { import = editor .. "trouble-v3" },
     { import = formatting .. "black" },
     { import = formatting .. "prettier" },
     { import = lang .. "ansible" },
