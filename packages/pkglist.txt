@@ -39,6 +39,7 @@ gvfs-mtp
 gvfs-nfs
 gvfs-smb
 haruna
+helvum
 htop
 i3-wm
 i3blocks
@@ -66,6 +67,7 @@ noto-fonts-emoji
 numlockx
 obs-studio
 obsidian-bin
+pavucontrol
 picom
 playerctl
 polkit-gnome
