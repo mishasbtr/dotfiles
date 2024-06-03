@@ -85,6 +85,7 @@ rofi-power-menu
 rustup
 scrot
 spotify
+starship
 sysstat
 telegram-desktop
 thunar
