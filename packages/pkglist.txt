@@ -12,6 +12,7 @@ blueman
 bluetoothctl
 caffeine-ng
 calibre
+cmake-lint
 ddcui
 ddcutil
 dex
