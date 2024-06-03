@@ -4,3 +4,4 @@
 
 vim.opt.clipboard = ""
 vim.g.camelcasemotion_key = "\\"
+vim.o.termguicolors = true

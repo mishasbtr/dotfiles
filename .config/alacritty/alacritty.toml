@@ -30,4 +30,5 @@ family = "Hack Nerd Font"
 style = "Bold Italic"
 
 [env]
+term = "xterm-256color"
 WINIT_X11_SCALE_FACTOR = "1.66"
