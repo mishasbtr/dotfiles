@@ -18,6 +18,6 @@ return {
   keys = {
     { "<leader>rll", "<cmd>Leet list<cr>",   desc = "Leet list" },
     { "<leader>rlr", "<cmd>Leet run<cr>",    desc = "Leet run" },
-    { "<leader>rlc", "<cmd>Leet submit<cr>", desc = "Leet submit" },
+    { "<leader>rls", "<cmd>Leet submit<cr>", desc = "Leet submit" },
   },
 }
