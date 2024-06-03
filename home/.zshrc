@@ -38,4 +38,8 @@ export VISUAL=nvim
 export EDITOR=nvim
 export TERMINAL=alacritty
 
+# setup autosuggestions color
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#d65d0e"
+
+
 eval "$(starship init zsh)"
