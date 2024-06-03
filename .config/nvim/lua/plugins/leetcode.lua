@@ -14,4 +14,10 @@ return {
   opts = {
     lang = "javascript",
   },
+  cmd = { "Leet" },
+  keys = {
+    { "<leader>rll", "<cmd>Leet list<cr>",   desc = "Leet list" },
+    { "<leader>rlr", "<cmd>Leet run<cr>",    desc = "Leet run" },
+    { "<leader>rlc", "<cmd>Leet submit<cr>", desc = "Leet submit" },
+  },
 }
