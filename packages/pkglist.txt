@@ -21,7 +21,6 @@ dmenu
 dolphin
 dropbox
 dunst
-elisa
 evince
 fd
 feh
@@ -87,6 +86,7 @@ rustup
 scrot
 spotify
 starship
+strawberry
 sysstat
 telegram-desktop
 thunar
