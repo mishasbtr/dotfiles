@@ -3,7 +3,6 @@ return {
   opts = function(_, opts)
     vim.list_extend(opts.ensure_installed, {
       "angular",
-      "astro",
       "cpp",
       "css",
       "csv",

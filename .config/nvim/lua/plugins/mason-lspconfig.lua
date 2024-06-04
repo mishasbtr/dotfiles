@@ -3,7 +3,6 @@ return {
   opts = {
     servers = {
       angularls = {},
-      astro = {},
       mdx_analyzer = {},
       cssls = {},
       cssmodules_ls = {},

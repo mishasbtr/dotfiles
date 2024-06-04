@@ -41,6 +41,7 @@ require("lazy").setup({
     { import = formatting .. "black" },
     { import = formatting .. "prettier" },
     { import = lang .. "ansible" },
+    { import = lang .. "astro" },
     { import = lang .. "clangd" },
     { import = lang .. "cmake" },
     { import = lang .. "docker" },
