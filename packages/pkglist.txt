@@ -9,6 +9,7 @@ awesome-terminal-fonts
 bc
 bitwarden
 blueman
+bluez-utils
 bluetoothctl
 caffeine-ng
 calibre
