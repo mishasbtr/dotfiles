@@ -19,5 +19,6 @@ return {
     { "<leader>rll", "<cmd>Leet list<cr>",   desc = "Leet list" },
     { "<leader>rlr", "<cmd>Leet run<cr>",    desc = "Leet run" },
     { "<leader>rls", "<cmd>Leet submit<cr>", desc = "Leet submit" },
+    { "<leader>rlh", "<cmd>Leet hints<cr>",  desc = "Leet hints" },
   },
 }
