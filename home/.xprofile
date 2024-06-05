@@ -2,6 +2,8 @@
 
 # enable natural scrolling for trackpad
 xinput set-prop 'Synaptics TM3471-020' 'libinput Natural Scrolling Enabled' 1
+# disable touchpad
+# xinput disable 'Synaptics TM3471-020'
 # set trackpoint speed
 xinput set-prop 'TPPS/2 Elan TrackPoint' 'libinput Accel Speed' 0.2
 
