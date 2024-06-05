@@ -59,6 +59,7 @@ require("lazy").setup({
     { import = ui .. "mini-indentscope" },
     { import = util .. "mini-hipatterns" },
     { import = util .. "project" },
+    { import = util .. "dot" },
     { import = "plugins" },
   },
   defaults = {
