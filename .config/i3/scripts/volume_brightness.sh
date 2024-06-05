@@ -76,6 +76,10 @@ function decrease_brightness {
   xbacklight -set $new_brightness -time 0
 }
 
+function set_brightness_full {
+  xbacklight -set 100 -time 0
+}
+
 # Main function - Takes user input, "volume_up", "volume_down", "brightness_up", or "brightness_down"
 case $1 in
 volume_up)
@@ -111,4 +115,10 @@ brightness_down)
   decrease_brightness
 	show_brightness_notif
 	;;
+
+brightness_full)
+  set_brightness_full
+  show_brightness_notif
+  ;;
+
 esac
