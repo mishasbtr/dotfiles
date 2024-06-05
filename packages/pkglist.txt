@@ -9,8 +9,8 @@ awesome-terminal-fonts
 bc
 bitwarden
 blueman
-bluez-utils
 bluetoothctl
+bluez-utils
 caffeine-ng
 calibre
 cmake-lint
@@ -104,6 +104,7 @@ ttf-opensans
 tumbler
 udiskie
 udisks2
+unclutter
 ungoogled-chromium-bin
 vim
 visual-studio-code-bin
