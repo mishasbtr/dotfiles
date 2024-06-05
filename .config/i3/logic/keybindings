@@ -139,13 +139,23 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
+# volume
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_up
 bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_down
+
+# mute
 bindsym XF86AudioMute exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_mute
 bindsym XF86AudioMicMute exec amixer sset Capture toggle
+
+# brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_up
 bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_down
 bindsym $mod+b exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh brightness_full
+
+# external monitor brightness
+bindsym Shift+XF86MonBrightnessUp exec --no-startup-id ~/.config/i3/scripts/external_monitor_brightness.sh brightness_up
+bindsym Shift+XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/scripts/external_monitor_brightness.sh brightness_down
+bindsym $mod+Shift+b exec --no-startup-id ~/.config/i3/scripts/external_monitor_brightness.sh brightness_full
 
 bindsym $mod+Shift+Return exec alacritty
 bindsym $mod+Return exec ~/.config/i3/scripts/run_or_switch.sh alacritty
