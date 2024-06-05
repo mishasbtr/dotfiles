@@ -4,7 +4,6 @@ return {
   opts = {
     ---@type lspconfig.options
     servers = {
-      angularls = {},
       mdx_analyzer = {},
       cssls = {},
       cssmodules_ls = {},

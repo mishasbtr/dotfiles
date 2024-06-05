@@ -40,6 +40,7 @@ require("lazy").setup({
     { import = editor .. "refactoring" },
     { import = formatting .. "black" },
     { import = formatting .. "prettier" },
+    { import = lang .. "angular" },
     { import = lang .. "ansible" },
     { import = lang .. "astro" },
     { import = lang .. "clangd" },
@@ -57,9 +58,9 @@ require("lazy").setup({
     { import = linting .. "eslint" },
     { import = test .. "core" },
     { import = ui .. "mini-indentscope" },
+    { import = util .. "dot" },
     { import = util .. "mini-hipatterns" },
     { import = util .. "project" },
-    { import = util .. "dot" },
     { import = "plugins" },
   },
   defaults = {
