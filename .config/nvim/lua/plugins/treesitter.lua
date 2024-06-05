@@ -6,7 +6,6 @@ return {
       "cpp",
       "css",
       "csv",
-      "scheme",
       "scss",
     })
   end,
