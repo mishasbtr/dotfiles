@@ -18,3 +18,11 @@ autocmd({ "BufEnter" }, {
 })
 
 -- end of blameline stuff
+
+-- setup treesitter for angular
+autocmd("FileType", {
+  pattern = "angular.html",
+  callback = function()
+    vim.treesitter.language.register("angular", "angular.html")
+  end,
+})
