@@ -42,3 +42,7 @@ export TERMINAL=alacritty
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#a89984"
 
 eval "$(starship init zsh)"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
