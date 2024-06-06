@@ -1,2 +1,2 @@
 #!/bin/bash
-timeout 2 i3-msg "restart"
+timeout 5 i3-msg "restart"
