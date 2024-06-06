@@ -5,11 +5,3 @@
 vim.opt.clipboard = ""
 vim.g.camelcasemotion_key = "\\"
 vim.o.termguicolors = true
-
--- setup treesitter for angular
-vim.filetype.add({
-  pattern = {
-    [".*%.component%.html"] = "angular.html",
-    [".*%.container%.html"] = "angular.html",
-  },
-})
