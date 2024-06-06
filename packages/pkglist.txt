@@ -88,6 +88,7 @@ scrot
 spotify
 starship
 strawberry
+stylua
 sysstat
 telegram-desktop
 thunar
