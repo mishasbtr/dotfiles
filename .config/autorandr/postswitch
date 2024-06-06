@@ -1,2 +1,4 @@
 #!/bin/bash
-timeout 5 i3-msg "restart"
+
+sleep 10s
+i3-msg "restart"
