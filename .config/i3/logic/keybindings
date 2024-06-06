@@ -138,6 +138,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# playback
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl pause
 
 # volume
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_up
