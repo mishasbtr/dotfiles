@@ -85,6 +85,7 @@ rofi
 rofi-power-menu
 rustup
 scrot
+shfmt
 spotify
 starship
 strawberry
