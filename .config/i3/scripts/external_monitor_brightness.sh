@@ -8,13 +8,13 @@ function get_brightness {
 }
 
 function set_brightness {
-	ddcutil --display 1 setvcp $brightness_vcp_code $1
+	ddcutil --display 1 setvcp $brightness_vcp_code "$1"
 }
 
 function increase_brightness {
 	brightness=$(get_brightness)
-	if [ $brightness -lt 100 ]; then
-		brightness=$((brightness + $brightness_step))
+	if [ "$brightness" -lt 100 ]; then
+		brightness=$((brightness + brightness_step))
 		set_brightness $brightness
 	else
 		set_brightness 100
@@ -24,8 +24,8 @@ function increase_brightness {
 
 function decrease_brightness {
 	brightness=$(get_brightness)
-	if [ $brightness -gt 0 ]; then
-		brightness=$((brightness - $brightness_step))
+	if [ "$brightness" -gt 0 ]; then
+		brightness=$((brightness - brightness_step))
 		set_brightness $brightness
 	else
 		set_brightness 0
@@ -37,7 +37,7 @@ function show_brightness_notif {
 	brightness_icon=""
 
 	brightness=$(get_brightness)
-	dunstify -t 1000 -r 2593 -u normal "$brightness_icon   $brightness%" -h int:value:$brightness -h string:hlcolor:$bar_color
+	dunstify -t 1000 -r 2593 -u normal "$brightness_icon   $brightness%" -h int:value:"$brightness" -h string:hlcolor:$bar_color
 }
 
 function set_brightness_full {

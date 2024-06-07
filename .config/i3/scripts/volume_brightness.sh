@@ -46,34 +46,34 @@ function get_brightness_icon {
 function show_volume_notif {
 	volume=$(get_mute)
 	get_volume_icon
-	dunstify -t 1000 -r 2593 -u normal "$volume_icon   $volume%" -h int:value:$volume -h string:hlcolor:$bar_color
+	dunstify -t 1000 -r 2593 -u normal "$volume_icon   $volume%" -h int:value:"$volume" -h string:hlcolor:$bar_color
 }
 
 # Displays a brightness notification using dunstify
 function show_brightness_notif {
 	brightness=$(get_brightness)
 	get_brightness_icon
-	dunstify -t 1000 -r 2593 -u normal "$brightness_icon   $brightness%" -h int:value:$brightness -h string:hlcolor:$bar_color
+	dunstify -t 1000 -r 2593 -u normal "$brightness_icon   $brightness%" -h int:value:"$brightness" -h string:hlcolor:$bar_color
 }
 
 function increase_brightness {
 	current_brightness=$(get_brightness)
 	new_brightness=$(echo "$current_brightness + $brightness_step" | bc)
-	new_brightness=$(printf "%.0f" $new_brightness)
-	if [ $new_brightness -gt 100 ]; then
+	new_brightness=$(printf "%.0f" "$new_brightness")
+	if [ "$new_brightness" -gt 100 ]; then
 		new_brightness=100
 	fi
-	xbacklight -set $new_brightness -time 0
+	xbacklight -set "$new_brightness" -time 0
 }
 
 function decrease_brightness {
 	current_brightness=$(get_brightness)
 	new_brightness=$(echo "$current_brightness - $brightness_step" | bc)
-	new_brightness=$(printf "%.0f" $new_brightness)
-	if [ $new_brightness -lt 0 ]; then
+	new_brightness=$(printf "%.0f" "$new_brightness")
+	if [ "$new_brightness" -lt 0 ]; then
 		new_brightness=0
 	fi
-	xbacklight -set $new_brightness -time 0
+	xbacklight -set "$new_brightness" -time 0
 }
 
 function set_brightness_full {
