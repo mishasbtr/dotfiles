@@ -57,27 +57,27 @@ function show_brightness_notif {
 }
 
 function increase_brightness {
-  current_brightness=$(get_brightness)
-  new_brightness=$(echo "$current_brightness + $brightness_step" | bc)
-  new_brightness=$(printf "%.0f" $new_brightness)
+	current_brightness=$(get_brightness)
+	new_brightness=$(echo "$current_brightness + $brightness_step" | bc)
+	new_brightness=$(printf "%.0f" $new_brightness)
 	if [ $new_brightness -gt 100 ]; then
-	    new_brightness=100
+		new_brightness=100
 	fi
 	xbacklight -set $new_brightness -time 0
 }
 
 function decrease_brightness {
-  current_brightness=$(get_brightness)
-  new_brightness=$(echo "$current_brightness - $brightness_step" | bc)
-  new_brightness=$(printf "%.0f" $new_brightness)
-  if [ $new_brightness -lt 0 ]; then
-      new_brightness=0
-  fi
-  xbacklight -set $new_brightness -time 0
+	current_brightness=$(get_brightness)
+	new_brightness=$(echo "$current_brightness - $brightness_step" | bc)
+	new_brightness=$(printf "%.0f" $new_brightness)
+	if [ $new_brightness -lt 0 ]; then
+		new_brightness=0
+	fi
+	xbacklight -set $new_brightness -time 0
 }
 
 function set_brightness_full {
-  xbacklight -set 100 -time 0
+	xbacklight -set 100 -time 0
 }
 
 # Main function - Takes user input, "volume_up", "volume_down", "brightness_up", or "brightness_down"
@@ -107,18 +107,18 @@ volume_mute)
 	;;
 
 brightness_up)
-  increase_brightness
+	increase_brightness
 	show_brightness_notif
 	;;
 
 brightness_down)
-  decrease_brightness
+	decrease_brightness
 	show_brightness_notif
 	;;
 
 brightness_full)
-  set_brightness_full
-  show_brightness_notif
-  ;;
+	set_brightness_full
+	show_brightness_notif
+	;;
 
 esac
