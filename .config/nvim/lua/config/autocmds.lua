@@ -16,7 +16,9 @@ autocmd({ "BufEnter" }, {
     vim.cmd("EnableBlameLine")
   end,
 })
+-- end of blameline stuff
 
+-- highlight i3 configs
 autocmd({ "BufEnter" }, {
   group = augroup("buf_enter"),
   pattern = { "*/i3/*/*config" },
@@ -24,5 +26,3 @@ autocmd({ "BufEnter" }, {
     vim.bo.filetype = "i3config"
   end,
 })
-
--- end of blameline stuff
