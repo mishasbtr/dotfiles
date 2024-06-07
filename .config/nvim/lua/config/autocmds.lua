@@ -2,7 +2,7 @@
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
 
--- all this stuff is needed for blameline to work
+-- setup blameline
 local autocmd = vim.api.nvim_create_autocmd
 
 local function augroup(name)
