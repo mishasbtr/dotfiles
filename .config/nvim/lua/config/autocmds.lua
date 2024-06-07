@@ -17,4 +17,12 @@ autocmd({ "BufEnter" }, {
   end,
 })
 
+autocmd({ "BufEnter" }, {
+  group = augroup("buf_enter"),
+  pattern = { "*/i3/*/*config" },
+  callback = function()
+    vim.bo.filetype = "i3config"
+  end,
+})
+
 -- end of blameline stuff
