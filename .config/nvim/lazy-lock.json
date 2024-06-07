@@ -48,7 +48,7 @@
   "nvim-blame-line": { "branch": "master", "commit": "b3d94f0ed5882d3d1c843c69788b9670476e1f42" },
   "nvim-cmp": { "branch": "main", "commit": "5260e5e8ecadaf13e6b82cf867a909f54e15fd07" },
   "nvim-jdtls": { "branch": "master", "commit": "40e8494e04c1bcd5dd6c0d0bc187d2d10965017d" },
-  "nvim-lint": { "branch": "master", "commit": "1a3a8d047bc01f1760ae4a0f5e80f111ea222e67" },
+  "nvim-lint": { "branch": "master", "commit": "cf6ffafe158441b8c5e2051ab0fe5b1983527ba7" },
   "nvim-lspconfig": { "branch": "master", "commit": "92166b89ab4b3d60f24e58170cac53b7141fd032" },
   "nvim-navic": { "branch": "master", "commit": "8649f694d3e76ee10c19255dece6411c29206a54" },
   "nvim-nio": { "branch": "master", "commit": "632024157d01e8bc48fd7df6a7de8ffe3fdd4f3a" },
