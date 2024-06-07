@@ -16,9 +16,12 @@ return {
   },
   cmd = { "Leet" },
   keys = {
-    { "<leader>rll", "<cmd>Leet list<cr>",   desc = "Leet list" },
-    { "<leader>rlr", "<cmd>Leet run<cr>",    desc = "Leet run" },
+    { "<leader>rl", "", desc = "+leet" },
+    { "<leader>rla", "<cmd>Leet lang<cr>", desc = "Leet lang" },
+    { "<leader>rlh", "<cmd>Leet hints<cr>", desc = "Leet hints" },
+    { "<leader>rll", "<cmd>Leet list<cr>", desc = "Leet list" },
+    { "<leader>rlo", "<cmd>Leet<cr>", desc = "Leet" },
+    { "<leader>rlr", "<cmd>Leet run<cr>", desc = "Leet run" },
     { "<leader>rls", "<cmd>Leet submit<cr>", desc = "Leet submit" },
-    { "<leader>rlh", "<cmd>Leet hints<cr>",  desc = "Leet hints" },
   },
 }
