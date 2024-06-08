@@ -19,7 +19,7 @@ autocmd({ "BufEnter" }, {
 -- end of blameline stuff
 
 -- highlight i3 configs
-autocmd({ "BufEnter" }, {
+autocmd({ "BufReadPost", "BufNew" }, {
   group = augroup("buf_enter"),
   pattern = { "*/i3/*/*config" },
   callback = function()
