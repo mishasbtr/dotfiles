@@ -34,6 +34,7 @@ require("lazy").setup({
     { import = coding .. "yanky" },
     { import = editor .. "aerial" },
     { import = editor .. "harpoon2" },
+    { import = editor .. "mini-files" },
     { import = editor .. "mini-diff" },
     { import = editor .. "navic" },
     { import = editor .. "refactoring" },
