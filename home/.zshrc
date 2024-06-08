@@ -43,6 +43,9 @@ export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#a89984"
 
 eval "$(starship init zsh)"
 
+# aliases
+alias gmm="gcm && gl && gco - && gm -"
+alias gmmp="gmm && gp"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
