@@ -18,7 +18,7 @@ return {
   keys = {
     { "<leader>i", "", desc = "+leet" },
     { "<leader>ig", "<cmd>Leet lang<cr>", desc = "Leet lang" },
-    { "<leader>id", "<cma>Leet desc toggle<cr>", desc = "Leet desc toggle" },
+    { "<leader>id", "<cmd>Leet desc toggle<cr>", desc = "Leet desc toggle" },
     { "<leader>ih", "<cmd>Leet hints<cr>", desc = "Leet hints" },
     { "<leader>il", "<cmd>Leet list<cr>", desc = "Leet list" },
     { "<leader>ii", "<cmd>Leet<cr>", desc = "Leet" },
