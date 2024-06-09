@@ -86,7 +86,8 @@ function toggle_stalonetray {
 		hide_stalonetray
 	else
 		show_stalonetray
-		center_window
+		# TODO: fix
+		#center_window
 		focus_stalonetray
 	fi
 }
