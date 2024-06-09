@@ -12,9 +12,10 @@ map("n", "<C-S-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase Window
 -- hol' up cowboy
 local function cowboy()
   ---@type table?
-  local id
+  local ids = {}
   local ok = true
   for _, key in ipairs({ "h", "j", "k", "l", "+", "-" }) do
+    ids[key] = nil
     local count = 0
     local timer = assert(vim.uv.new_timer())
     local key_map = key
@@ -22,16 +23,20 @@ local function cowboy()
       if vim.v.count > 0 then
         count = 0
       end
-      if count >= 10 and vim.bo.buftype ~= "nofile" then
-        ok, id = pcall(vim.notify, "Hold it Cowboy!", vim.log.levels.WARN, {
+      if count >= 20 and vim.bo.buftype ~= "nofile" then
+        if ids == nil then
+          return
+        end
+        local replace_id = ids[key]
+        ok, ids[key] = pcall(vim.notify, "Hold it Cowboy! Too much '" .. key .. "'!", vim.log.levels.WARN, {
           icon = "🤠",
-          replace = id,
+          replace = replace_id,
           keep = function()
-            return count >= 10
+            return count >= 20
           end,
         })
         if not ok then
-          id = nil
+          ids[key] = nil
           return key_map
         end
       else

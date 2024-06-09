@@ -12,7 +12,7 @@ return {
     "nvim-tree/nvim-web-devicons",
   },
   opts = {
-    lang = "javascript",
+    lang = "python3",
   },
   cmd = { "Leet" },
   keys = {
@@ -21,7 +21,7 @@ return {
     { "<leader>id", "<cmd>Leet desc toggle<cr>", desc = "Leet desc toggle" },
     { "<leader>ih", "<cmd>Leet hints<cr>", desc = "Leet hints" },
     { "<leader>il", "<cmd>Leet list<cr>", desc = "Leet list" },
-    { "<leader>ii", "<cmd>Leet<cr>", desc = "Leet" },
+    { "<leader>ii", "<cmd>Leet<cr><cmd>Copilot disable<cr>", desc = "Leet without copilot" },
     { "<leader>ir", "<cmd>Leet run<cr>", desc = "Leet run" },
     { "<leader>is", "<cmd>Leet submit<cr>", desc = "Leet submit" },
   },
