@@ -1,5 +1,4 @@
 acpi
-rofi-bluetooth
 acpilight
 alacritty
 antigen
@@ -83,6 +82,8 @@ qt6ct
 redshift
 rnote
 rofi
+rofi-bluetooth-git
+rofi-mixer-git
 rofi-power-menu
 rustup
 scrot
