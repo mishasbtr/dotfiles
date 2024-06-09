@@ -1,0 +1,35 @@
+import = [
+  "~/.config/alacritty/alacritty-theme/themes/gruvbox_material_hard_dark.toml",
+  # "~/.config/alacritty/alacritty-theme/themes/gruvbox_material_hard_light.toml",
+]
+
+[window]
+decorations = "none"
+opacity = 0.9
+
+[scrolling]
+history = 10_000
+
+
+[font]
+size = 6
+
+[font.normal]
+family = "Hack Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "Hack Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "Hack Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "Hack Nerd Font"
+style = "Bold Italic"
+
+[env]
+term = "xterm-256color"
+WINIT_X11_SCALE_FACTOR = "1.66"

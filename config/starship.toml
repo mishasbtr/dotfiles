@@ -1,0 +1,10 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$directory\
+$fill\
+$all\
+"""
+
+add_newline = false
+command_timeout = 1000

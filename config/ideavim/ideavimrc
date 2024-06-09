@@ -1,0 +1,14 @@
+Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-surround'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'vim-scripts/ReplaceWithRegister'
+Plug 'vim-scripts/argtextobj.vim'
+Plug 'michaeljsmith/vim-indent-object'
+Plug 'machakann/vim-highlightedyank'
+Plug 'kana/vim-textobj-entire'
+
+nmap <C-W>q :action CloseEditor<CR>
+
+set ignorecase
+set smartcase
+
