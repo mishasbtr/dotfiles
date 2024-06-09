@@ -87,6 +87,7 @@ rustup
 scrot
 shfmt
 spotify
+stalonetray
 starship
 strawberry
 stylua
@@ -115,11 +116,13 @@ wmctrl
 xbindkeys
 xclip
 xdg-user-dirs-gtk
+xdotool
 xed
 xf86-input-wacom
 xfce4-terminal
 xorg-xdpyinfo
 xorg-xinput
+xorg-xwininfo
 xss-lock
 yay
 zoom
