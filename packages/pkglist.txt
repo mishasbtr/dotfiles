@@ -1,4 +1,5 @@
 acpi
+rofi-bluetooth
 acpilight
 alacritty
 antigen
