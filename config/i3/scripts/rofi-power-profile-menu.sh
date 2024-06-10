@@ -1,14 +1,14 @@
 #!/bin/bash
 
-PERFORMANCE_MENU_OPTION="󱐋 performance"
-BALANCED_MENU_OPTION=" balanced"
-POWER_SAVER_MENU_OPTION=" power saver"
+performance_menu_option="󱐋 performance"
+balanced_menu_option=" balanced"
+power_saver_menu_option=" power saver"
 
-PERFORMANCE_VALUE="performance"
-BALANCED_VALUE="balanced"
-POWER_SAVER_VALUE="power-saver"
+performance_value="performance"
+balanced_value="balanced"
+power_saver_value="power-saver"
 
-profiles="$PERFORMANCE_MENU_OPTION\n$BALANCED_MENU_OPTION\n$POWER_SAVER_MENU_OPTION"
+profiles="$performance_menu_option\n$balanced_menu_option\n$power_saver_menu_option"
 
 chosen=$(echo -e "$profiles" | rofi -dmenu -p "Select power profile")
 
@@ -18,14 +18,14 @@ fi
 
 # case switch for chosen profile
 case $chosen in
-"$PERFORMANCE_MENU_OPTION")
-	powerprofilesctl set $PERFORMANCE_VALUE
+"$performance_menu_option")
+	powerprofilesctl set $performance_value
 	;;
-"$BALANCED_MENU_OPTION")
-	powerprofilesctl set $BALANCED_VALUE
+"$balanced_menu_option")
+	powerprofilesctl set $balanced_value
 	;;
-"$POWER_SAVER_MENU_OPTION")
-	powerprofilesctl set $POWER_SAVER_VALUE
+"$power_saver_menu_option")
+	powerprofilesctl set $power_saver_value
 	;;
 esac
 

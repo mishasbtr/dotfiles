@@ -1,12 +1,12 @@
 #!/bin/bash
 
-APP_NAME=$1
-APP_WINDOW_INFO=$(wmctrl -xl | grep -i "$APP_NAME")
+app_name=$1
+app_window_info=$(wmctrl -xl | grep -i "$app_name")
 
-if [ -z "$APP_WINDOW_INFO" ]; then
-	i3-msg exec "$APP_NAME"
+if [ -z "$app_window_info" ]; then
+	i3-msg exec "$app_name"
 	exit 0
 fi
 
-APP_WINDOW_ID=$(echo "$APP_WINDOW_INFO" | awk '{print $1}')
-i3-msg "[id=$APP_WINDOW_ID] focus"
+app_window_id=$(echo "$app_window_info" | awk '{print $1}')
+i3-msg "[id=$app_window_id] focus"
