@@ -8,5 +8,4 @@ if [ -z "$app_window_info" ]; then
 	exit 0
 fi
 
-app_window_id=$(echo "$app_window_info" | awk '{print $1}')
-i3-msg "[id=$app_window_id] focus"
+"$(dirname "$0")"/switch_to_last_of_app.sh "$app_name"
