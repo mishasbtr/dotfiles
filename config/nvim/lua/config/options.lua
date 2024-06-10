@@ -5,3 +5,6 @@
 vim.opt.clipboard = ""
 vim.g.camelcasemotion_key = "\\"
 vim.o.termguicolors = true
+
+-- configure basedpyright
+vim.g.lazyvim_python_lsp = "basedpyright"
