@@ -51,6 +51,7 @@ jetbrains-toolbox
 jq
 lazygit
 libreoffice-fresh
+librewolf-bin
 lightdm
 lightdm-slick-greeter
 lm_sensors
