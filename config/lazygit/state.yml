@@ -1,0 +1,22 @@
+lastupdatecheck: 0
+recentrepos:
+    - /home/misha/dotfiles
+    - /home/misha/dotfiles/archive/inspiration/maximbaz-dotfiles
+    - /home/misha/projects/LazyVim
+    - /home/misha/projects/leetcode.nvim
+    - /home/misha/projects/test-angular-app
+    - /home/misha/projects/rainbow-delimiters.nvim
+    - /home/misha/projects/neovim
+    - /home/misha/projects/interview-prep/todo-list
+    - /home/misha/projects/personal-website
+startuppopupversion: 5
+lastversion: 0.42.0
+customcommandshistory:
+    - q
+hidecommandlog: false
+ignorewhitespaceindiffview: false
+diffcontextsize: 3
+localbranchsortorder: recency
+remotebranchsortorder: alphabetical
+gitlogorder: topo-order
+gitlogshowgraph: always
