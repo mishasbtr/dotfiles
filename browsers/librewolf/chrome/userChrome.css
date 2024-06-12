@@ -1,16 +1,34 @@
+/* hide tabs */
 #TabsToolbar {
   display: none;
 }
 
+/* hide sidebar header */
 #sidebar-box #sidebar-header {
   display: none !important;
 }
 
+/* reduce sidebar header size */
+/* #sidebar-header { */
+/*   font-size: 1.2em !important; */
+/*   padding: 2px 6px 2px 3px !important; */
+/* } */
+/* #sidebar-header #sidebar-close { */
+/*   padding: 3px !important; */
+/* } */
+/* #sidebar-header #sidebar-close .toolbarbutton-icon { */
+/*   width: 14px !important; */
+/*   height: 14px !important; */
+/*   opacity: 0.6 !important; */
+/* } */
+
+/* hide navigation when not focused */
 #main-window:not([customizing])
   #navigator-toolbox:not(:focus-within):not(:hover) {
   margin-top: -45px;
 }
 
+/* show navigation when focused */
 #navigator-toolbox {
   transition: 0.2s margin-top ease-out;
 }
