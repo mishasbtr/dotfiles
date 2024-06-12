@@ -10,6 +10,7 @@
   #navigator-toolbox:not(:focus-within):not(:hover) {
   margin-top: -45px;
 }
+
 #navigator-toolbox {
   transition: 0.2s margin-top ease-out;
 }
