@@ -26,6 +26,7 @@ dunst
 evince
 fd
 feh
+ffmpeg
 file-roller
 firefox
 firewall-config
@@ -58,6 +59,9 @@ lightdm-slick-greeter
 lm_sensors
 lxappearance-gtk3
 man-db
+mkvtoolnix-cli
+mkvtoolnix-gui
+paru
 mpv
 neofetch
 neovim
@@ -129,7 +133,6 @@ xorg-xdpyinfo
 xorg-xinput
 xorg-xwininfo
 xss-lock
-yay
 zoom
 zotero-bin
 zsh
