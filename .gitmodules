@@ -7,3 +7,6 @@
 [submodule "archive/inspiration/maximbaz-dotfiles"]
 	path = archive/inspiration/maximbaz-dotfiles
 	url = https://github.com/maximbaz/dotfiles.git
+[submodule "archive/inspiration/folke-dotfiles"]
+	path = archive/inspiration/folke-dotfiles
+	url = https://github.com/folke/dot.git
