@@ -59,8 +59,6 @@ lightdm-slick-greeter
 lm_sensors
 lxappearance-gtk3
 man-db
-mkvtoolnix-cli
-mkvtoolnix-gui
 paru
 mpv
 neofetch
