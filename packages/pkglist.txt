@@ -14,6 +14,8 @@ bluetoothctl
 bluez-utils
 caffeine-ng
 calibre
+sox
+flacon
 cmake-lint
 cuetools
 ddcui
