@@ -7,7 +7,6 @@ archlinux-xdg-menu
 autorandr
 awesome-terminal-fonts
 bc
-flac
 beets
 bitwarden
 blueman
@@ -16,6 +15,7 @@ bluez-utils
 caffeine-ng
 calibre
 cmake-lint
+cuetools
 ddcui
 ddcutil
 dex
@@ -32,6 +32,7 @@ file-roller
 firefox
 firewall-config
 firewalld
+flac
 flameshot
 git
 github-cli
@@ -60,7 +61,6 @@ lightdm-slick-greeter
 lm_sensors
 lxappearance-gtk3
 man-db
-paru
 mpv
 neofetch
 neovim
@@ -73,6 +73,7 @@ noto-fonts-emoji
 numlockx
 obs-studio
 obsidian-bin
+paru
 pavucontrol
 picard
 picom
@@ -94,6 +95,7 @@ rofi-power-menu
 rustup
 scrot
 shfmt
+shntool
 spotify
 stalonetray
 starship
