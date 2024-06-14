@@ -1,5 +1,4 @@
 acpi
-makemkv
 acpilight
 alacritty
 antigen
@@ -62,6 +61,7 @@ lightdm
 lightdm-slick-greeter
 lm_sensors
 lxappearance-gtk3
+makemkv
 man-db
 mpv
 neofetch
