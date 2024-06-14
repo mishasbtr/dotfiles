@@ -4,7 +4,6 @@ alacritty
 antigen
 arandr
 archlinux-xdg-menu
-wavpack
 autorandr
 awesome-terminal-fonts
 bc
@@ -127,6 +126,7 @@ ungoogled-chromium-bin
 vim
 visual-studio-code-bin
 wacomtablet
+wavpack
 wmctrl
 xbindkeys
 xclip
