@@ -1,4 +1,5 @@
 acpi
+makemkv
 acpilight
 alacritty
 antigen
