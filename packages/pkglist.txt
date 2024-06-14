@@ -4,6 +4,7 @@ alacritty
 antigen
 arandr
 archlinux-xdg-menu
+wavpack
 autorandr
 awesome-terminal-fonts
 bc
