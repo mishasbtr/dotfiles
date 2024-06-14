@@ -14,8 +14,6 @@ bluetoothctl
 bluez-utils
 caffeine-ng
 calibre
-sox
-flacon
 cmake-lint
 cuetools
 ddcui
@@ -35,6 +33,7 @@ firefox
 firewall-config
 firewalld
 flac
+flacon
 flameshot
 git
 github-cli
@@ -72,6 +71,7 @@ networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-qt5
 noto-fonts-emoji
+nsxiv
 numlockx
 obs-studio
 obsidian-bin
@@ -98,6 +98,7 @@ rustup
 scrot
 shfmt
 shntool
+sox
 spotify
 stalonetray
 starship
