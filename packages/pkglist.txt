@@ -60,6 +60,7 @@ librewolf-bin
 lightdm
 lightdm-slick-greeter
 lm_sensors
+losslessaudiochecker
 lxappearance-gtk3
 makemkv
 man-db
