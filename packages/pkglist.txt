@@ -63,7 +63,9 @@ lm_sensors
 lxappearance-gtk3
 makemkv
 man-db
+mpd
 mpv
+ncmpcpp
 neofetch
 neovim
 network-manager-applet
