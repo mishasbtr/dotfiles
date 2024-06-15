@@ -80,7 +80,6 @@ obs-studio
 obsidian-bin
 paru
 pavucontrol
-picard
 picom
 playerctl
 polkit-gnome
