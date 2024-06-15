@@ -88,6 +88,7 @@ power-profiles-daemon
 powreprofilectl
 pyenv
 python-pulsectl
+python-requests
 qbittorrent
 qt6ct
 redshift
