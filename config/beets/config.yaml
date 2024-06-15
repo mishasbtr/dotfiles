@@ -1,0 +1,11 @@
+directory: ~/Dropbox/resources/music
+
+library: ~/Dropbox/resources/beetslibrary.db
+
+import:
+  move: yes
+
+plugins: missing
+
+missing:
+  format: $album - $title
