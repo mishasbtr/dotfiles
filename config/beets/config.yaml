@@ -5,7 +5,17 @@ library: ~/Dropbox/resources/beetslibrary.db
 import:
   move: yes
 
-plugins: missing duplicates
+plugins: missing duplicates unimported badfiles
+
+badfiles:
+  check_on_import: yes
 
 missing:
   format: $album - $title
+
+duplicates:
+  format: $album - $title
+
+unimported:
+  ignore_extensions: jpg png
+  ignore_subdirectories: NonMusic
