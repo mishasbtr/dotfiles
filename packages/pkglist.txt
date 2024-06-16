@@ -65,6 +65,7 @@ lxappearance-gtk3
 makemkv
 man-db
 mcg
+mpc
 mpd
 mpd-mpris
 mpv
