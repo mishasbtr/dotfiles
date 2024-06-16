@@ -36,6 +36,7 @@ firewalld
 flac
 flacon
 flameshot
+fzf
 git
 github-cli
 gruvbox-lus-icon-theme-git
