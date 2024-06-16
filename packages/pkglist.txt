@@ -110,7 +110,6 @@ sox
 spotify
 stalonetray
 starship
-strawberry
 stylua
 sysstat
 telegram-desktop
