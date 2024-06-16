@@ -1,6 +1,7 @@
 acpi
 acpilight
 alacritty
+alsa-utils
 antigen
 arandr
 archlinux-xdg-menu
@@ -63,6 +64,7 @@ lm_sensors
 lxappearance-gtk3
 makemkv
 man-db
+mcg
 mpd
 mpv
 ncmpcpp
