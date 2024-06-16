@@ -69,6 +69,7 @@ mpc
 mpd
 mpd-mpris
 mpv
+musnify-mpd
 ncmpcpp
 neofetch
 neovim-git
