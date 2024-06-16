@@ -22,3 +22,5 @@ def_key "n"
   next_found_item
 def_key "N"
   previous_found_item
+def_key "t"
+  run_external_console_command "~/.config/ncmpcpp/open_current_song_art.sh"
