@@ -66,10 +66,11 @@ makemkv
 man-db
 mcg
 mpd
+mpd-mpris
 mpv
 ncmpcpp
 neofetch
-neovim
+neovim-git
 network-manager-applet
 networkmanager
 networkmanager-openconnect
