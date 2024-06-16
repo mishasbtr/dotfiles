@@ -35,6 +35,7 @@ require("lazy").setup({
     { import = editor .. "aerial" },
     { import = editor .. "harpoon2" },
     { import = editor .. "illuminate" },
+    { import = editor .. "inc-rename" },
     { import = editor .. "mini-diff" },
     { import = editor .. "mini-files" },
     { import = editor .. "navic" },
