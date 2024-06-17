@@ -2,6 +2,9 @@ acpi
 acpilight
 alacritty
 alsa-utils
+ansible
+ansible-core
+ansible-lint
 antigen
 arandr
 archlinux-xdg-menu
