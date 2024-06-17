@@ -82,6 +82,7 @@ networkmanager
 networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-qt5
+noto-fonts-cjk
 noto-fonts-emoji
 nsxiv
 numlockx
