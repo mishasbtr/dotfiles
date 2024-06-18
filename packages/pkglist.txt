@@ -101,6 +101,7 @@ python-pulsectl
 python-requests
 qbittorrent
 qt6ct
+qutebrowser
 redshift
 rnote
 rofi
