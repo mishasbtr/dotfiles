@@ -4,8 +4,9 @@ library: ~/Dropbox/resources/beetslibrary.db
 
 import:
   move: yes
+  write: yes
 
-plugins: missing duplicates unimported badfiles fetchart
+plugins: missing duplicates unimported badfiles fetchart lyrics
 
 badfiles:
   check_on_import: yes
@@ -22,3 +23,6 @@ unimported:
 
 fetchart:
   auto: yes
+
+lyrics:
+  synced: yes
