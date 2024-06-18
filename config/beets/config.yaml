@@ -6,7 +6,7 @@ import:
   move: yes
   write: yes
 
-plugins: missing duplicates unimported badfiles fetchart lyrics
+plugins: missing duplicates unimported badfiles fetchart lyrics lastgenre
 
 badfiles:
   check_on_import: yes
@@ -26,3 +26,6 @@ fetchart:
 
 lyrics:
   synced: yes
+
+lastgenre:
+  count: 3

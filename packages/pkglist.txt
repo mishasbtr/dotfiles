@@ -101,6 +101,7 @@ pyenv
 python-adblock
 python-beautifulsoup4
 python-pulsectl
+python-pylast
 python-requests
 qbittorrent
 qt6ct
