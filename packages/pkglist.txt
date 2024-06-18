@@ -99,6 +99,7 @@ power-profiles-daemon
 powreprofilectl
 pyenv
 python-adblock
+python-beautifulsoup4
 python-pulsectl
 python-requests
 qbittorrent
