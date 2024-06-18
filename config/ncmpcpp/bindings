@@ -30,6 +30,7 @@ def_key "alt-a"
   run_external_console_command "~/.config/ncmpcpp/open_current_song_art.sh"
 def_key "ctrl-v"
   select_item
+  scroll_down
 def_key "alt-p"
   clear_main_playlist
   play_item
