@@ -1,4 +1,12 @@
-config.load_autoconfig(True)
+# type: ignore
+
+from qutebrowser.config.configfiles import ConfigAPI
+from qutebrowser.config.config import ConfigContainer
+
+config: ConfigAPI = config  # noqa: F821
+c: ConfigContainer = c  # noqa: F821
+
+config.load_autoconfig(False)
 
 # ui
 config.source("gruvbox.py")
@@ -19,11 +27,11 @@ c.content.javascript.clipboard = "access"
 c.content.notifications.enabled = True
 c.editor.command = ["alacritty", "-e", "nvim", "{}"]
 c.fileselect.handler = "external"
-c.fileselect.single_file.command = ["alacritty", "sh", "-c", "xplr > {}"]
-c.fileselect.multiple_files.command = ["alacritty", "sh", "-c", "xplr > {}"]
+c.fileselect.single_file.command = ["alacritty", "-e", "ranger", "{}"]
+c.fileselect.multiple_files.command = ["alacritty", "-e", "ranger", "{}"]
 c.downloads.location.prompt = True
 c.tabs.show = "multiple"
-c.tabs.last_close = "close"
+c.tabs.last_close = "default-page"
 
 # privacy
 c.content.webrtc_ip_handling_policy = "default-public-interface-only"
@@ -41,10 +49,11 @@ c.url.start_pages = ["~/.config/qutebrowser/blank.html"]
 bindings = {
     "<Ctrl-Shift-J>": "tab-move +",
     "<Ctrl-Shift-K>": "tab-move -",
-    ",m": "hint links spawn --detach mpv --force-window=immediate {hint-url}",
+    ",m": "hint links spawn --detach mpv --force-window=immediate {url}",
+    ",M": "hint links spawn --detach mpv --force-window=immediate {hint-url}",
     "D": "undo",
     ",p": "spawn --userscript qute-bitwarden",
+    "xt": "config-cycle tabs.show always switching",
 }
-
 for key, bind in bindings.items():
     config.bind(key, bind)
