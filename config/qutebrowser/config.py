@@ -14,6 +14,7 @@ c.tabs.title.format_pinned = "{index}: {audio}{current_title}"
 # general
 c.auto_save.session = True
 c.content.default_encoding = "utf-8"
+c.content.blocking.method = "both"
 c.content.javascript.clipboard = "access"
 c.content.notifications.enabled = True
 c.editor.command = ["alacritty", "nvim", "-e", "exec {line}g{column0}l", "{}"]
@@ -43,6 +44,7 @@ bindings = {
     "<Ctrl-Shift-J>": "tab-move +",
     "<Ctrl-Shift-K>": "tab-move -",
     "D": "undo",
+    ",p": "spawn --userscript qute-bitwarden",
 }
 
 for key, bind in bindings.items():

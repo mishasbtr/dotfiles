@@ -13,6 +13,7 @@ awesome-terminal-fonts
 bc
 beets
 bitwarden
+bitwarden-cli
 blueman
 bluetoothctl
 bluez-utils
@@ -97,6 +98,7 @@ polybar
 power-profiles-daemon
 powreprofilectl
 pyenv
+python-adblock
 python-pulsectl
 python-requests
 qbittorrent
