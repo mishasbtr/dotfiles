@@ -7,6 +7,7 @@ import = [
 decorations = "none"
 opacity = 0.9
 dynamic_title = true
+blur = true
 
 [scrolling]
 history = 10_000
