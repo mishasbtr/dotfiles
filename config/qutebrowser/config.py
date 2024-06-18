@@ -22,7 +22,6 @@ c.fileselect.handler = "external"
 c.fileselect.single_file.command = ["alacritty", "sh", "-c", "xplr > {}"]
 c.fileselect.multiple_files.command = ["alacritty", "sh", "-c", "xplr > {}"]
 c.downloads.location.prompt = True
-c.input.insert_mode.auto_load = True
 c.tabs.show = "multiple"
 c.tabs.last_close = "close"
 
@@ -43,6 +42,7 @@ c.url.start_pages = ["~/.config/qutebrowser/blank.html"]
 bindings = {
     "<Ctrl-Shift-J>": "tab-move +",
     "<Ctrl-Shift-K>": "tab-move -",
+    ",m": "hint links spawn --detach mpv --force-window=immediate {hint-url}",
     "D": "undo",
     ",p": "spawn --userscript qute-bitwarden",
 }

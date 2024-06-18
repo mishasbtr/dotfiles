@@ -155,6 +155,7 @@ xorg-xdpyinfo
 xorg-xinput
 xorg-xwininfo
 xss-lock
+yt-dlp
 zoom
 zotero-bin
 zsh
