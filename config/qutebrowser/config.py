@@ -49,6 +49,8 @@ c.url.start_pages = ["~/.config/qutebrowser/blank.html"]
 bindings = {
     "<Ctrl-Shift-J>": "tab-move +",
     "<Ctrl-Shift-K>": "tab-move -",
+    "<Ctrl-Shift-PgUp>": "tab-move +",
+    "<Ctrl-Shift-PgDown>": "tab-move -",
     ",m": "hint links spawn --detach mpv --force-window=immediate {url}",
     ",M": "hint links spawn --detach mpv --force-window=immediate {hint-url}",
     "D": "undo",
