@@ -57,9 +57,9 @@ bindings = {
     ",M": "hint links spawn --detach mpv --force-window=immediate {hint-url}",
     "D": "undo",
     ",p": "spawn --userscript qute-bitwarden",
-    "xt": "config-cycle tabs.show always switching",
-    "xx": "config-cycle statusbar.show always in-mode ;; config-cycle tabs.show always switching",
-    "xb": "config-cycle statusbar.show always in-mode",
+    "xt": "config-cycle tabs.show switching always",
+    "xx": "config-cycle statusbar.show in-mode always ;; config-cycle tabs.show switching always",
+    "xb": "config-cycle statusbar.show in-mode always",
 }
 for key, bind in bindings.items():
     config.bind(key, bind)
