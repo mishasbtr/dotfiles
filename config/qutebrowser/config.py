@@ -55,7 +55,6 @@ bindings = {
     "<Ctrl-Shift-PgDown>": "tab-move -",
     ",m": "hint links spawn --detach mpv --force-window=immediate {url}",
     ",M": "hint links spawn --detach mpv --force-window=immediate {hint-url}",
-    "D": "undo",
     ",p": "spawn --userscript qute-bitwarden",
     "xt": "config-cycle tabs.show switching always",
     "xx": "config-cycle statusbar.show in-mode always ;; config-cycle tabs.show switching always",
