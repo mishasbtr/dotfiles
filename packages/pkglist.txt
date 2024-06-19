@@ -74,7 +74,7 @@ mpd-mpris
 mpv
 musnify-mpd
 ncmpcpp-git
-neofetch
+fastfetch
 neovim-git
 network-manager-applet
 networkmanager
