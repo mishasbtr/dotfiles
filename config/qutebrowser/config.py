@@ -42,6 +42,7 @@ c.url.searchengines = {
     "DEFAULT": "https://duckduckgo.com/?q={}",
     "g": "https://google.com/search?q={}",
     "wa": "https://wiki.archlinux.org/?search={}",
+    "aur": "https://archlinux.org/packages/?q={}",
 }
 c.url.default_page = "~/.config/qutebrowser/blank.html"
 c.url.start_pages = ["~/.config/qutebrowser/blank.html"]
