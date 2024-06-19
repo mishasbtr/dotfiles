@@ -39,8 +39,9 @@ c.content.webrtc_ip_handling_policy = "default-public-interface-only"
 
 # urls
 c.url.searchengines = {
-    "DEFAULT": "https://google.com/search?q={}",
-    "?": "https://google.com/search?q={}",
+    "DEFAULT": "https://duckduckgo.com/?q={}",
+    "g": "https://google.com/search?q={}",
+    "wa": "https://wiki.archlinux.org/?search={}",
 }
 c.url.default_page = "~/.config/qutebrowser/blank.html"
 c.url.start_pages = ["~/.config/qutebrowser/blank.html"]
