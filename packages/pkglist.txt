@@ -29,7 +29,6 @@ dmenu
 dolphin
 dropbox
 dunst
-evince
 fd
 feh
 ffmpeg
@@ -50,7 +49,6 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
-haruna
 helvum
 htop
 i3-wm
