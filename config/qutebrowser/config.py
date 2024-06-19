@@ -56,6 +56,8 @@ bindings = {
     "D": "undo",
     ",p": "spawn --userscript qute-bitwarden",
     "xt": "config-cycle tabs.show always switching",
+    "xx": "config-cycle statusbar.show always in-mode ;; config-cycle tabs.show always switching",
+    "xb": "config-cycle statusbar.show always in-mode",
 }
 for key, bind in bindings.items():
     config.bind(key, bind)
