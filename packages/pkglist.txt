@@ -156,6 +156,8 @@ xorg-xinput
 xorg-xwininfo
 xss-lock
 yt-dlp
+zathura-git
+zathura-pdf-mupdf-git
 zoom
 zotero-bin
 zsh
