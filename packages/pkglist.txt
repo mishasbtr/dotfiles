@@ -146,7 +146,6 @@ xbindkeys
 xclip
 xdg-user-dirs-gtk
 xdotool
-xed
 xf86-input-wacom
 xfce4-terminal
 xorg-xdpyinfo
