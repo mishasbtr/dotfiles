@@ -52,6 +52,7 @@ require("lazy").setup({
     { import = lang .. "json" },
     { import = lang .. "markdown" },
     { import = lang .. "omnisharp" },
+    { import = lang .. "prisma" },
     { import = lang .. "python" },
     { import = lang .. "rust" },
     { import = lang .. "tailwind" },
