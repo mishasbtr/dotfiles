@@ -32,6 +32,7 @@ c.fileselect.multiple_files.command = ["alacritty", "-e", "ranger", "{}"]
 c.downloads.location.prompt = True
 c.tabs.show = "multiple"
 c.tabs.last_close = "default-page"
+c.session.lazy_restore = True
 
 # privacy
 c.content.webrtc_ip_handling_policy = "default-public-interface-only"
@@ -47,6 +48,7 @@ c.url.start_pages = ["~/.config/qutebrowser/blank.html"]
 
 # keys
 bindings = {
+    "<Ctrl-r>": "config-source",
     "<Ctrl-Shift-J>": "tab-move +",
     "<Ctrl-Shift-K>": "tab-move -",
     "<Ctrl-Shift-PgUp>": "tab-move +",
