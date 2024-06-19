@@ -157,5 +157,5 @@ yt-dlp
 zathura-git
 zathura-pdf-mupdf-git
 zoom
-zotero-bin
+zotero-beta-bin
 zsh
