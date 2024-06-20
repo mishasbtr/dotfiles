@@ -29,6 +29,7 @@ dmenu
 dolphin
 dropbox
 dunst
+fastfetch
 fd
 feh
 ffmpeg
@@ -74,7 +75,6 @@ mpd-mpris
 mpv
 musnify-mpd
 ncmpcpp-git
-fastfetch
 neovim-git
 network-manager-applet
 networkmanager
@@ -135,6 +135,7 @@ ttf-opensans
 tumbler
 udiskie
 udisks2
+ueberzugpp
 unclutter
 ungoogled-chromium-bin
 vim
