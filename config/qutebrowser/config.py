@@ -30,7 +30,7 @@ c.fileselect.handler = "external"
 c.fileselect.single_file.command = ["alacritty", "-e", "ranger", "{}"]
 c.fileselect.multiple_files.command = ["alacritty", "-e", "ranger", "{}"]
 c.downloads.location.prompt = True
-c.tabs.show = "multiple"
+c.tabs.show = "always"
 c.tabs.last_close = "default-page"
 c.session.lazy_restore = True
 
