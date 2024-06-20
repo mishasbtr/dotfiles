@@ -112,11 +112,13 @@ rofi-mixer-git
 rofi-power-menu
 rustup
 scrot
+sdcv
 shfmt
 shntool
 sox
 spotify
 stalonetray
+stardict-wordnet
 starship
 stylua
 sysstat
