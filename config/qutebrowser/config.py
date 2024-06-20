@@ -40,10 +40,12 @@ c.content.webrtc_ip_handling_policy = "default-public-interface-only"
 # urls
 c.url.searchengines = {
     "DEFAULT": "https://duckduckgo.com/?q={}",
-    "g": "https://google.com/search?q={}",
-    "wa": "https://wiki.archlinux.org/?search={}",
+    "ggl": "https://google.com/search?q={}",
+    "yt": "https://youtube.com/results?search_query={}",
+    "aw": "https://wiki.archlinux.org/?search={}",
     "ar": "https://archlinux.org/packages/?q={}",
     "aur": "https://aur.archlinux.org/packages?O=0&SeB=nd&K={}&outdated=&SB=p&SO=d&PP=50&submit=Go",
+    "gw": "https://wiki.gentoo.org/index.php?title=Special%3ASearch&search={}&go=Go",
 }
 c.url.default_page = "~/.config/qutebrowser/blank.html"
 c.url.start_pages = ["~/.config/qutebrowser/blank.html"]
