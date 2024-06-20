@@ -1,18 +1,22 @@
 #!/bin/bash
 (
-  flock 200
+	flock 200
 
-  killall -q polybar
+	kill -9 $(pgrep -f 'polybar') >/dev/null 2>&1
 
-  while pgrep -u $UID -x polybar > /dev/null; do sleep 0.5; done
+	polybar-msg cmd quit >/dev/null 2>&1
 
-  outputs=$(polybar --list-monitors | cut -d":" -f1)
-  tray_output=eDP-1
+	# Wait until the processes have been shut down
+	while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
-  for m in $outputs; do
-    export MONITOR=$m
+	outputs=$(polybar --list-monitors | cut -d":" -f1)
+	tray_output=eDP-1
 
-    polybar --reload main </dev/null >/var/tmp/polybar-$m.log 2>&1 200>&- &
-    disown
-  done
+	for m in $outputs; do
+		export MONITOR=$m
+
+		polybar --reload main </dev/null >/var/tmp/polybar-$m.log 2>&1 200>&- &
+		disown
+	done
 ) 200>/var/tmp/polybar-launch.lock
+
