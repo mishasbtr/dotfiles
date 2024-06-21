@@ -27,8 +27,14 @@ c.content.javascript.clipboard = "access"
 c.content.notifications.enabled = True
 c.editor.command = ["alacritty", "-e", "nvim", "{}"]
 c.fileselect.handler = "external"
-c.fileselect.single_file.command = ["alacritty", "-e", "ranger", "{}"]
-c.fileselect.multiple_files.command = ["alacritty", "-e", "ranger", "{}"]
+c.fileselect.single_file.command = ["alacritty", "-e", "ranger", "--choosefile", "{}"]
+c.fileselect.multiple_files.command = [
+    "alacritty",
+    "-e",
+    "ranger",
+    "--choosefiles",
+    "{}",
+]
 c.downloads.location.prompt = True
 c.tabs.show = "always"
 c.tabs.last_close = "default-page"
