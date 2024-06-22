@@ -6,7 +6,7 @@
 # See README.md for usage instructions
 bar_color="#ebdbb2"
 volume_step=1
-brightness_step=2.5
+brightness_step=5
 max_volume=100
 
 # Uses regex to get volume from pactl
@@ -118,6 +118,11 @@ brightness_down)
 
 brightness_full)
 	set_brightness_full
+	show_brightness_notif
+	;;
+
+set_brightness)
+	xbacklight -set "$2" -time 0
 	show_brightness_notif
 	;;
 
