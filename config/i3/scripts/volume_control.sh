@@ -5,17 +5,14 @@ bar_color="#ebdbb2"
 volume_step=1
 max_volume=100
 
-# Uses regex to get volume from pactl
 function get_volume() {
 	pactl get-sink-volume @DEFAULT_SINK@ | grep -Po '[0-9]{1,3}(?=%)' | head -1
 }
 
-# Uses regex to get mute status from pactl
 function get_mute() {
 	pactl get-sink-mute @DEFAULT_SINK@ | grep -Po '(?<=Mute: )(yes|no)'
 }
 
-# Returns a mute icon, a volume-low icon, or a volume-high icon, depending on the volume
 function get_volume_icon() {
 	local volume=$1
 	local mute
@@ -31,9 +28,9 @@ function get_volume_icon() {
 
 function show_volume_notif() {
 	local volume
-	volume=$(get_mute)
-	get_volume_icon volume
-	nofify-send "$volume_icon  $volume%" -h int:value:"$volume" -h string:hlcolor:$bar_color
+	volume=$(get_volume)
+	get_volume_icon "$volume"
+	dunstify -t 1000 -r 2593 -u normal "$volume_icon  $volume%" -h int:value:"$volume" -h string:hlcolor:$bar_color
 }
 
 case $1 in
