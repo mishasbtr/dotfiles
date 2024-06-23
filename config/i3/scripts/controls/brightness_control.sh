@@ -10,11 +10,11 @@ function get_brightness() {
 	xbacklight -get | grep -Po '[0-9]{1,3}' | head -n 1
 }
 
-function show_brightness_notif {
+function show_brightness_notif() {
 	~/.config/i3/scripts/utils/show_control_notification.sh "" "$(get_brightness)"
 }
 
-function increase_brightness {
+function increase_brightness() {
 	local current_brightness
 	local new_brightness
 	current_brightness=$(get_brightness)
@@ -26,7 +26,7 @@ function increase_brightness {
 	set_brightness "$new_brightness"
 }
 
-function decrease_brightness {
+function decrease_brightness() {
 	local current_brightness
 	local new_brightness
 	current_brightness=$(get_brightness)
