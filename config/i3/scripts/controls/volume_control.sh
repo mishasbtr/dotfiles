@@ -13,24 +13,19 @@ function get_mute() {
 
 function get_volume_icon() {
 	local volume=$1
-	local mute
-	mute=$(get_mute)
-	if [ "$volume" -eq 0 ] || [ "$mute" == "yes" ]; then
-		volume_icon=""
+	if [ "$volume" -eq 0 ] || [ "$(get_mute)" == "yes" ]; then
+		echo ""
 	elif [ "$volume" -lt 50 ]; then
-		volume_icon=""
+		echo ""
 	else
-		volume_icon=""
+		echo ""
 	fi
 }
 
 function show_volume_notif() {
-	local notification_id=2593
-	local bar_color="#ebdbb2"
 	local volume
 	volume=$(get_volume)
-	get_volume_icon "$volume"
-	dunstify -t 1000 -r $notification_id -u normal "$volume_icon  $volume%" -h int:value:"$volume" -h string:hlcolor:$bar_color
+	~/.config/i3/scripts/utils/show_control_notification.sh "$(get_volume_icon "$volume")" "$volume"
 }
 
 case $1 in
