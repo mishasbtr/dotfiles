@@ -1,7 +1,7 @@
 {
   "CamelCaseMotion": { "branch": "master", "commit": "de439d7c06cffd0839a29045a103fe4b44b15cdc" },
   "CopilotChat.nvim": { "branch": "canary", "commit": "82923efe22b604cf9c0cad0bb2a74aa9247755ab" },
-  "LazyVim": { "branch": "main", "commit": "002ce62413e47c278525d7e092c205b2c850ece1" },
+  "LazyVim": { "branch": "main", "commit": "2a7ba6d09ce85fa752c25e68ca5287e24b8cee75" },
   "SchemaStore.nvim": { "branch": "main", "commit": "e33d8db3fdc0ac7be4ba5312feb4fc1972087eee" },
   "aerial.nvim": { "branch": "master", "commit": "eb25396dae306cef5b8fffbe9ae98283d2f1c199" },
   "bufferline.nvim": { "branch": "main", "commit": "6ac7e4f1eead72507cfdbc94dcd0c26b98b2f86e" },
@@ -44,7 +44,7 @@
   "neotest": { "branch": "master", "commit": "26ed90509c377d10dbdebd25b7094a886323b32b" },
   "neotest-dotnet": { "branch": "main", "commit": "caeb52b602fa8a5855c5839c338fb65b50a40ab3" },
   "neotest-python": { "branch": "master", "commit": "2e83d2bc00acbcc1fd529dbf0a0e677cabfe6b50" },
-  "noice.nvim": { "branch": "main", "commit": "88ac36864b5976a64b14a8f156c616f41b32f228" },
+  "noice.nvim": { "branch": "main", "commit": "c36467f9944cef92c4561080816c0dfe06a7a1bd" },
   "nui.nvim": { "branch": "main", "commit": "a2bc1e9d0359caa5d11ad967cd1e30e8d4676226" },
   "nvim-ansible": { "branch": "main", "commit": "cb5d0cc79c1864b72d5ae40a926a1176b18f1b65" },
   "nvim-blame-line": { "branch": "master", "commit": "b3d94f0ed5882d3d1c843c69788b9670476e1f42" },
