@@ -1,7 +1,5 @@
 #!/bin/bash
 
-bar_color="#ebdbb2"
-
 brightness_step=5
 
 function set_brightness() {
@@ -13,6 +11,7 @@ function get_brightness() {
 }
 
 function show_brightness_notif {
+	local bar_color="#ebdbb2"
 	local brightness_icon=""
 	local brightness
 	brightness=$(get_brightness)

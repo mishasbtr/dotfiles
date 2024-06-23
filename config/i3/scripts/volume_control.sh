@@ -1,7 +1,5 @@
 #!/bin/bash
 
-bar_color="#ebdbb2"
-
 volume_step=1
 max_volume=100
 
@@ -27,6 +25,7 @@ function get_volume_icon() {
 }
 
 function show_volume_notif() {
+	local bar_color="#ebdbb2"
 	local volume
 	volume=$(get_volume)
 	get_volume_icon "$volume"
@@ -35,7 +34,6 @@ function show_volume_notif() {
 
 case $1 in
 volume_up)
-	# Unmutes and increases volume, then displays the notification
 	pactl set-sink-mute @DEFAULT_SINK@ 0
 	volume=$(get_volume)
 	if [ $(("$volume" + "$volume_step")) -gt $max_volume ]; then
@@ -47,13 +45,11 @@ volume_up)
 	;;
 
 volume_down)
-	# Raises volume and displays the notification
 	pactl set-sink-volume @DEFAULT_SINK@ -$volume_step%
 	show_volume_notif
 	;;
 
 volume_mute)
-	# Toggles mute and displays the notification
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
 	show_volume_notif
 	;;
