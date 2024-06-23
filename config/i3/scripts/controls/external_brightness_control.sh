@@ -1,6 +1,6 @@
 #!/bin/bash
 
-brightness_vcp_code=10
+readonly brightness_vcp_code=10
 
 function get_brightness {
 	ddcutil --display 1 getvcp $brightness_vcp_code | awk '{print $9}' | sed 's/,$//'
