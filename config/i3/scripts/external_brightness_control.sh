@@ -11,10 +11,11 @@ function set_brightness {
 }
 
 function show_brightness_notif {
+	local notification_id=2593
 	bar_color="#ebdbb2"
 	brightness_icon=""
 	brightness=$(get_brightness)
-	dunstify -t 1000 -r 2593 -u normal "$brightness_icon   $brightness%" -h int:value:"$brightness" -h string:hlcolor:$bar_color
+	dunstify -t 1000 -r $notification_id -u normal "$brightness_icon   $brightness%" -h int:value:"$brightness" -h string:hlcolor:$bar_color
 }
 
 case $1 in
