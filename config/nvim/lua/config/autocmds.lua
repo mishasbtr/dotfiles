@@ -10,7 +10,7 @@ local function augroup(name)
 end
 
 autocmd({ "BufEnter" }, {
-  group = augroup("buf_enter"),
+  group = augroup("blameline"),
   pattern = { "*" },
   callback = function()
     vim.cmd("EnableBlameLine")
@@ -20,7 +20,7 @@ autocmd({ "BufEnter" }, {
 
 -- highlight i3 configs
 autocmd({ "BufReadPost", "BufNew" }, {
-  group = augroup("buf_enter"),
+  group = augroup("i3config"),
   pattern = { "*/i3/*/*config" },
   callback = function()
     vim.bo.filetype = "i3config"
