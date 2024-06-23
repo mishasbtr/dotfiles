@@ -25,11 +25,12 @@ function get_volume_icon() {
 }
 
 function show_volume_notif() {
+	local notification_id=2593
 	local bar_color="#ebdbb2"
 	local volume
 	volume=$(get_volume)
 	get_volume_icon "$volume"
-	dunstify -t 1000 -r 2593 -u normal "$volume_icon  $volume%" -h int:value:"$volume" -h string:hlcolor:$bar_color
+	dunstify -t 1000 -r $notification_id -u normal "$volume_icon  $volume%" -h int:value:"$volume" -h string:hlcolor:$bar_color
 }
 
 case $1 in
