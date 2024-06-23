@@ -2,7 +2,7 @@
 (
 	flock 200
 
-	killall -q polybar
+	pkill -9 polybar
 
 	while pgrep -u $UID -x polybar >/dev/null; do sleep 0.5; done
 
@@ -15,4 +15,3 @@
 		disown
 	done
 ) 200>/var/tmp/polybar-launch.lock
-
