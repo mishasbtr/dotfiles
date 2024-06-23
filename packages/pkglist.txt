@@ -68,6 +68,7 @@ lm_sensors
 lxappearance-gtk3
 makemkv
 man-db
+massren-git
 mcg
 mpc
 mpd
