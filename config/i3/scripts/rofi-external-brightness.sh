@@ -1,6 +1,6 @@
 #!/bin/bash
 
-current=$(~/config/i3/scripts/external_monitor_brightness.sh get_brightness)
+current=$(~/.config/i3/scripts/external_monitor_brightness.sh get_brightness)
 # Round the current brightness to the nearest integer
 current=$(printf "%.0f" "$current")
 new_brightness=$(rofi -dmenu -p "Set brightness (current: $current%)" -lines 0)
