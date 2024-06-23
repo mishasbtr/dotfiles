@@ -17,16 +17,7 @@ function show_brightness_notif {
 	dunstify -t 1000 -r 2593 -u normal "$brightness_icon   $brightness%" -h int:value:"$brightness" -h string:hlcolor:$bar_color
 }
 
-function set_brightness_full {
-	set_brightness 100
-}
-
 case $1 in
-brightness_full)
-	set_brightness_full
-	show_brightness_notif
-	;;
-
 get_brightness)
 	get_brightness
 	;;
