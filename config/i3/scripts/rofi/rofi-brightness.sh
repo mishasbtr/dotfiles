@@ -14,4 +14,4 @@ if ! [[ "$new_brightness" =~ ^[0-9]+$ ]] || [ "$new_brightness" -lt 0 ] || [ "$n
 	exit 1
 fi
 
-~/.config/i3/scripts/volume_brightness.sh set_brightness "$new_brightness"
+~/.config/i3/scripts/brightness_control.sh set_brightness "$new_brightness"
