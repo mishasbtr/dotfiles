@@ -12,7 +12,7 @@ return {
         settings = {
           typescript = {
             preferences = {
-              importModuleSpecifierPreference = "relative",
+              importModuleSpecifier = "relative",
             },
           },
         },
