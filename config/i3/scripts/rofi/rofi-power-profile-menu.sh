@@ -10,7 +10,6 @@ readonly power_saver_value="power-saver"
 
 readonly profiles="$performance_menu_option\n$balanced_menu_option\n$power_saver_menu_option"
 
-readonly chosen
 chosen=$(echo -e "$profiles" | rofi -dmenu -p "Select power profile")
 
 if [ -z "$chosen" ]; then
