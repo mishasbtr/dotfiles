@@ -1,8 +1,8 @@
 #!/bin/bash
 
-readonly performance_menu_option="󱐋 performance"
-readonly balanced_menu_option=" balanced"
-readonly power_saver_menu_option=" power saver"
+readonly performance_menu_option="󱐋  performance"
+readonly balanced_menu_option="  balanced"
+readonly power_saver_menu_option="  power saver"
 
 readonly performance_value="performance"
 readonly balanced_value="balanced"
@@ -28,4 +28,4 @@ case $chosen in
 	;;
 esac
 
-notify-send "Power Profile" "Power profile switched to $chosen"
+dunstify -t 2000 -r 282828 -u normal "Power profile switched to $chosen"
