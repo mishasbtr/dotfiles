@@ -60,6 +60,7 @@ require("lazy").setup({
     { import = linting .. "eslint" },
     { import = test .. "core" },
     { import = ui .. "mini-indentscope" },
+    { import = ui .. "treesitter-context" },
     { import = util .. "dot" },
     { import = util .. "mini-hipatterns" },
     { import = util .. "project" },
