@@ -26,7 +26,8 @@ require("lazy").setup({
         colorscheme = "gruvbox",
       },
     },
-    -- import any extras modules here
+    -- extras
+
     { import = coding .. "copilot" },
     { import = coding .. "copilot-chat" },
     { import = coding .. "mini-comment" },
@@ -54,6 +55,7 @@ require("lazy").setup({
     { import = lang .. "prisma" },
     { import = lang .. "python" },
     { import = lang .. "rust" },
+    { import = lang .. "sql" },
     { import = lang .. "tailwind" },
     { import = lang .. "typescript" },
     { import = lang .. "yaml" },
@@ -64,6 +66,8 @@ require("lazy").setup({
     { import = util .. "dot" },
     { import = util .. "mini-hipatterns" },
     { import = util .. "project" },
+
+    -- end of extras
     { import = "plugins" },
   },
   defaults = {
