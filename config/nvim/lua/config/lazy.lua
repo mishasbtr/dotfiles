@@ -59,6 +59,7 @@ require("lazy").setup({
     { import = lang .. "tailwind" },
     { import = lang .. "typescript" },
     { import = lang .. "yaml" },
+    { import = lang .. "toml" },
     { import = linting .. "eslint" },
     { import = test .. "core" },
     { import = ui .. "mini-indentscope" },
