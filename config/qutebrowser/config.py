@@ -53,7 +53,7 @@ c.url.searchengines = {
     "aur": "https://aur.archlinux.org/packages?O=0&SeB=nd&K={}&outdated=&SB=p&SO=d&PP=50&submit=Go",
     "gw": "https://wiki.gentoo.org/index.php?title=Special%3ASearch&search={}&go=Go",
     "ghr": "https://github.com/search?q={}&type=repositories",
-    "aa": "https://annas-archive.gs/search?q={}",
+    "aa": "https://annas-archive.org/search?q={}",
 }
 c.url.default_page = "~/.config/qutebrowser/blank.html"
 c.url.start_pages = ["~/.config/qutebrowser/blank.html"]
