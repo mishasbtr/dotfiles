@@ -61,12 +61,12 @@ c.url.start_pages = ["~/.config/qutebrowser/blank.html"]
 
 # keys
 bindings = {
-    "<Ctrl-r>": "config-source",
     "<Ctrl-Shift-J>": "tab-move +",
     "<Ctrl-Shift-K>": "tab-move -",
     "<Ctrl-Shift-PgUp>": "tab-move +",
     "<Ctrl-Shift-PgDown>": "tab-move -",
-    "<Ctrl-i>": "config-cycle colors.webpage.darkmode.enabled True False",
+    "<Ctrl-R>": "config-cycle colors.webpage.darkmode.enabled True False",
+    "<Ctrl-Shift-R>": "config-source",
     ",m": "spawn --detach mpv --force-window=immediate {url}",
     ",M": "hint links spawn --detach mpv --force-window=immediate {hint-url}",
     ",p": "spawn --userscript qute-bitwarden",
