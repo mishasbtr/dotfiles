@@ -108,7 +108,6 @@ redshift
 rnote
 rofi
 rofi-bluetooth-git
-rofi-mixer-git
 rofi-power-menu
 rustup
 scrot
