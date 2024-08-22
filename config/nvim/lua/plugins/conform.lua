@@ -1,3 +1,4 @@
+-- TODO: remove once https://github.com/LazyVim/LazyVim/pull/4345 is mreged
 return {
   "conform.nvim",
   opts = function(_, opts)
