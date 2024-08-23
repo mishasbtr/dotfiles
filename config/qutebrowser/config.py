@@ -18,6 +18,7 @@ c.statusbar.widgets = ["progress", "keypress", "url", "history"]
 c.tabs.position = "left"
 c.tabs.title.format = "{index}: {audio}{current_title}"
 c.tabs.title.format_pinned = "{index}: {audio}{current_title}"
+c.window.hide_decoration = True
 
 # general
 c.auto_save.session = True
