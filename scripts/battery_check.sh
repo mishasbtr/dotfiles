@@ -3,6 +3,10 @@
 threshold=20
 notification_id=1234
 
+if acpi -b | grep -q "Charging"; then
+  exit 0
+fi
+
 battery_level=$(acpi -b | grep -P -o '[0-9]+(?=%)')
 
 if [ "$battery_level" -le "$threshold" ]; then
