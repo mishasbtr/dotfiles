@@ -1,6 +1,6 @@
 #!/bin/bash
 
-THRESHOLD=100
+THRESHOLD=20
 notification_id=1234
 
 BATTERY_LEVEL=$(acpi -b | grep -P -o '[0-9]+(?=%)')
