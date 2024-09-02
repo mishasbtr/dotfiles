@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Battery Notification Script Every 5 Minutes
+
+[Timer]
+OnBootSec=1s
+OnUnitActiveSec=5min
+Unit=battery-notification.service
+
+[Install]
+WantedBy=timers.target
+

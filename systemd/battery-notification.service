@@ -1,0 +1,6 @@
+[Unit]
+Description=Battery Low Notification
+
+[Service]
+ExecStart=/bin/bash /home/misha/scripts/battery_check.sh
+
