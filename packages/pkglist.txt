@@ -109,6 +109,7 @@ rnote
 rofi
 rofi-bluetooth-git
 rofi-power-menu
+rofimoji
 rustup
 scrot
 sdcv
