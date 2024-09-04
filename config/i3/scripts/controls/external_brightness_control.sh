@@ -1,6 +1,6 @@
 #!/bin/bash
 
-readonly lockfile="/tmp/external_brightness.lock"
+readonly lockfile="/tmp/external_brightness_control.lock"
 readonly brightness_vcp_code=10
 
 function get_brightness() {
