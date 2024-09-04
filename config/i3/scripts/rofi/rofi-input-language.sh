@@ -1,16 +1,12 @@
 #!/bin/bash
 
-readonly menu_option_us="🇺🇸 English (US)"
-readonly menu_option_ru="🇷🇺 Russian"
-readonly menu_option_ua="🇺🇦 Ukrainian"
-readonly menu_option_pl="🇵🇱 Polish"
+language_names=("🇺🇸 English (US)" "🇷🇺 Russian" "🇺🇦 Ukrainian" "🇵🇱 Polish")
+language_codes=("us" "ru" "ua" "pl")
 
-readonly us_value="us"
-readonly ru_value="ru"
-readonly ua_value="ua"
-readonly pl_value="pl"
-
-readonly lang_options="$menu_option_us\n$menu_option_ru\n$menu_option_ua\n$menu_option_pl"
+lang_options=""
+for key in "${language_names[@]}"; do
+  lang_options+="$key\n"
+done
 
 chosen_language=$(echo -e "$lang_options" | rofi -dmenu -i -p "Select input language")
 
@@ -18,23 +14,17 @@ if [ -z "$chosen_language" ]; then
   exit 0
 fi
 
-case $chosen_language in
-"$menu_option_us")
-  xkb-switch -s $us_value
-  ;;
-"$menu_option_ru")
-  xkb-switch -s $ru_value
-  ;;
-"$menu_option_ua")
-  xkb-switch -s $ua_value
-  ;;
-"$menu_option_pl")
-  xkb-switch -s $pl_value
-  ;;
-*)
+handle_unknown_option() {
   rofi -e "Unknown option selected."
   exit 1
-  ;;
-esac
+}
 
-dunstify -t 2000 -r 26428394 -u normal "Keyboard language switched" "$chosen_language"
+for index in "${!language_names[@]}"; do
+  if [ "$chosen_language" == "${language_names[$index]}" ]; then
+    xkb-switch -s "${language_codes[$index]}"
+    dunstify -t 2000 -r 26428394 -u normal "Keyboard language switched" "$chosen_language"
+    exit 0
+  fi
+done
+
+handle_unknown_option
