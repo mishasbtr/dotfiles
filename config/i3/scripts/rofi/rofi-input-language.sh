@@ -20,16 +20,16 @@ fi
 
 case $chosen_language in
 "$menu_option_us")
-  setxkbmap $us_value
+  xkb-switch -s $us_value
   ;;
 "$menu_option_ru")
-  setxkbmap $ru_value
+  xkb-switch -s $ru_value
   ;;
 "$menu_option_ua")
-  setxkbmap $ua_value
+  xkb-switch -s $ua_value
   ;;
 "$menu_option_pl")
-  setxkbmap $pl_value
+  xkb-switch -s $pl_value
   ;;
 *)
   rofi -e "Unknown option selected."
