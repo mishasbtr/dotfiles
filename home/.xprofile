@@ -13,4 +13,4 @@ xset r rate 200 35
 # swap caps and esc
 setxkbmap -option caps:swapescape
 # keybindings for switching between keyboard layouts
-setxkbmap -layout us,ru,ua,pl -option grp:win_space_toggle
+setxkbmap -layout us,ru,pl,ua -option grp:win_space_toggle
