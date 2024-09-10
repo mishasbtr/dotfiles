@@ -1,16 +1,80 @@
 #!/bin/sh
 
-# enable natural scrolling for trackpad
-xinput set-prop 'Synaptics TM3471-020' 'libinput Natural Scrolling Enabled' 1
-# disable touchpad
-# xinput disable 'Synaptics TM3471-020'
-# set trackpoint speed
-xinput set-prop 'TPPS/2 Elan TrackPoint' 'libinput Accel Speed' 0.2
+# Exit on error
+set -e
 
-# keyboard repeat delay and rate
-xset r rate 200 35
+# Log function for both errors and successful commands
+log_event() {
+  echo "[$(date)] $1" >>~/.xprofile-events.log
+}
 
-# swap caps and esc
-setxkbmap -option caps:swapescape
-# keybindings for switching between keyboard layouts
-setxkbmap -layout us,ru,pl,ua -option grp:win_space_toggle
+log_error() {
+  echo "[$(date)] Error: $1 failed to execute" >>~/.xprofile-errors.log
+}
+
+# Load user-specific settings from a config file if it exists
+CONFIG_FILE="$HOME/.xprofile-config"
+
+# ShellCheck directive to silence SC1090 for dynamic file sourcing
+# shellcheck source=/dev/null
+if [ -f "$CONFIG_FILE" ]; then
+  . "$CONFIG_FILE"
+fi
+
+# Set default values for variables in case they are not defined in the config
+TRACKPOINT_SPEED=${TRACKPOINT_SPEED:-0.2}
+KEY_REPEAT_DELAY=${KEY_REPEAT_DELAY:-200}
+KEY_REPEAT_RATE=${KEY_REPEAT_RATE:-35}
+DISABLE_TOUCHPAD=${DISABLE_TOUCHPAD:-false}
+
+# Find device names dynamically
+TOUCHPAD=$(xinput list --name-only | grep -i 'synaptics')
+TRACKPOINT=$(xinput list --name-only | grep -i 'trackpoint')
+
+# Enable natural scrolling for trackpad (if found)
+if [ -n "$TOUCHPAD" ]; then
+  if xinput set-prop "$TOUCHPAD" 'libinput Natural Scrolling Enabled' 1; then
+    log_event "Natural scrolling enabled for $TOUCHPAD"
+  else
+    log_error "Setting natural scrolling for $TOUCHPAD"
+  fi
+fi
+
+# Disable touchpad if the DISABLE_TOUCHPAD variable is set
+if [ "$DISABLE_TOUCHPAD" = "true" ] && [ -n "$TOUCHPAD" ]; then
+  if xinput disable "$TOUCHPAD"; then
+    log_event "Touchpad $TOUCHPAD disabled"
+  else
+    log_error "Disabling touchpad $TOUCHPAD"
+  fi
+fi
+
+# Set trackpoint speed (if found)
+if [ -n "$TRACKPOINT" ]; then
+  if xinput set-prop "$TRACKPOINT" 'libinput Accel Speed' "$TRACKPOINT_SPEED"; then
+    log_event "Trackpoint speed set to $TRACKPOINT_SPEED for $TRACKPOINT"
+  else
+    log_error "Setting trackpoint speed for $TRACKPOINT"
+  fi
+fi
+
+# Set keyboard repeat delay and rate with defaults
+if xset r rate "$KEY_REPEAT_DELAY" "$KEY_REPEAT_RATE"; then
+  log_event "Keyboard repeat rate set to delay: $KEY_REPEAT_DELAY, rate: $KEY_REPEAT_RATE"
+else
+  log_error "Setting keyboard repeat rate"
+fi
+
+# Swap Caps Lock and Escape
+if setxkbmap -option caps:swapescape; then
+  log_event "Caps Lock and Escape swapped"
+else
+  log_error "Swapping Caps Lock and Escape"
+fi
+
+# Set layouts and toggle option with Scroll Lock indicator
+if setxkbmap -layout us,ru,pl,ua -option grp:win_space_toggle -option grp_led:scroll; then
+  log_event "Keyboard layouts set (us, ru, pl, ua) with win+space toggle"
+else
+  log_error "Setting keyboard layouts"
+fi
