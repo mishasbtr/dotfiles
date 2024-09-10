@@ -7,8 +7,8 @@ enabled_flag=$(xinput list-props $device_id | grep "Device Enabled" | grep -o "[
 
 if [ "$enabled_flag" -eq 1 ]; then
   xinput disable $device_id
-  dunstify -r $notification_id "Trackpad Disabled"
+  dunstify -r $notification_id "󰤳 Trackpad Disabled"
 else
   xinput enable $device_id
-  dunstify -r $notification_id "Trackpad Enabled"
+  dunstify -r $notification_id "󰟸 Trackpad Enabled"
 fi
