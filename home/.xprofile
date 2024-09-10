@@ -72,8 +72,8 @@ else
   log_error "Swapping Caps Lock and Escape"
 fi
 
-# Set layouts and toggle option with Scroll Lock indicator
-if setxkbmap -layout us,ru,pl,ua -option grp:win_space_toggle -option grp_led:scroll; then
+# Set layouts and toggle option
+if setxkbmap -layout us,ru,pl,ua -option grp:win_space_toggle; then
   log_event "Keyboard layouts set (us, ru, pl, ua) with win+space toggle"
 else
   log_error "Setting keyboard layouts"
