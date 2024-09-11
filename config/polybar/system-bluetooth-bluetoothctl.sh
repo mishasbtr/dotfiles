@@ -17,7 +17,7 @@ bluetooth_print() {
 
         if echo "$device_info" | grep -q "Connected: yes"; then
           device_name=$(echo "$device_info" | grep "Alias" | cut -d ' ' -f 2-)
-          device_output=$(echo "$device_name" | awk '{print (length($0) > 10) ? substr($0, 1, 10) "..." : $0}')
+          device_output=$(echo "$device_name" | awk '{print (length($0) > 15) ? substr($0, 1, 15) "..." : $0}')
           device_battery_percent=$(echo "$device_info" | grep "Battery Percentage" | awk -F'[()]' '{print $2}')
 
           if [ -n "$device_battery_percent" ]; then
