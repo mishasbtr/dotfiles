@@ -4,7 +4,6 @@ alacritty
 alsa-utils
 ansible
 ansible-core
-ansible-lint
 antigen
 arandr
 archlinux-xdg-menu
@@ -19,7 +18,6 @@ bluetoothctl
 bluez-utils
 caffeine-ng
 calibre
-cmake-lint
 cuetools
 ddcui
 ddcutil
