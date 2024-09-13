@@ -111,14 +111,12 @@ rofimoji
 rustup
 scrot
 sdcv
-shfmt
 shntool
 sox
 spotify
 stalonetray
 stardict-wordnet
 starship
-stylua
 sysstat
 telegram-desktop
 thunar
