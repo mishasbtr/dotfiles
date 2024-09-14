@@ -4,6 +4,7 @@ application/pdf=calibre-ebook-viewer.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
 image/png=nsxiv-2.desktop;
 video/mp4=mpv.desktop;
+x-scheme-handler/tonsite=org.telegram.desktop.desktop;
 
 [Default Applications]
 application/epub+zip=org.pwmt.zathura.desktop
@@ -20,3 +21,4 @@ x-scheme-handler/msteams=teams.desktop
 x-scheme-handler/tidal=tidal-hifi.desktop
 x-scheme-handler/unknown=org.qutebrowser.qutebrowser.desktop
 application/epub=org.pwmt.zathura.desktop
+x-scheme-handler/tonsite=org.telegram.desktop.desktop
