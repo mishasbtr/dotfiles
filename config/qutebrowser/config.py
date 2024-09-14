@@ -26,11 +26,11 @@ c.content.default_encoding = "utf-8"
 c.content.blocking.method = "both"
 c.content.javascript.clipboard = "access"
 c.content.notifications.enabled = True
-c.editor.command = ["alacritty", "-e", "nvim", "{}"]
+c.editor.command = ["kitty", "-e", "nvim", "{}"]
 c.fileselect.handler = "external"
-c.fileselect.single_file.command = ["alacritty", "-e", "ranger", "--choosefile", "{}"]
+c.fileselect.single_file.command = ["kitty", "-e", "ranger", "--choosefile", "{}"]
 c.fileselect.multiple_files.command = [
-    "alacritty",
+    "kitty",
     "-e",
     "ranger",
     "--choosefiles",
