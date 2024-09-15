@@ -13,6 +13,10 @@ map("n", "<leader>cp", function()
   print("Copied relative path: " .. vim.fn.expand("%"))
 end, { noremap = true, silent = true, desc = "Copy Relative Path of Active File" })
 
+map("n", "<leader>fw", function()
+  LazyVim.pick("files", { default_text = vim.fn.expand("<cword>") })()
+end, { desc = "Find Files (Current word)" })
+
 -- TODO: refactor this once I understand lua modules
 -- hol' up cowboy
 -- local function cowboy()
