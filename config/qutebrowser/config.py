@@ -47,16 +47,16 @@ c.content.webrtc_ip_handling_policy = "default-public-interface-only"
 # urls
 c.url.searchengines = {
     "DEFAULT": "https://duckduckgo.com/?q={}",
-    "ggl": "https://google.com/search?q={}",
-    "yt": "https://youtube.com/results?search_query={}",
-    "aw": "https://wiki.archlinux.org/?search={}",
-    "ar": "https://archlinux.org/packages/?q={}",
-    "aur": "https://aur.archlinux.org/packages?O=0&SeB=nd&K={}&outdated=&SB=p&SO=d&PP=50&submit=Go",
-    "gw": "https://wiki.gentoo.org/index.php?title=Special%3ASearch&search={}&go=Go",
-    "ghr": "https://github.com/search?q={}&type=repositories",
     "aa": "https://annas-archive.org/search?q={}",
-    "wiki": "https://en.wikipedia.org/w/index.php?search={}",
+    "arch": "https://archlinux.org/packages/?q={}",
+    "archwiki": "https://wiki.archlinux.org/?search={}",
+    "aur": "https://aur.archlinux.org/packages?O=0&SeB=nd&K={}&outdated=&SB=p&SO=d&PP=50&submit=Go",
+    "gentoo": "https://wiki.gentoo.org/index.php?title=Special%3ASearch&search={}&go=Go",
+    "ggl": "https://google.com/search?q={}",
+    "gh": "https://github.com/search?q={}&type=repositories",
     "ruwiki": "https://ru.wikipedia.org/w/index.php?search={}",
+    "wiki": "https://en.wikipedia.org/w/index.php?search={}",
+    "yt": "https://youtube.com/results?search_query={}",
 }
 c.url.default_page = "~/.config/qutebrowser/blank.html"
 c.url.start_pages = ["~/.config/qutebrowser/blank.html"]
