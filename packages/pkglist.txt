@@ -85,7 +85,7 @@ noto-fonts-emoji
 nsxiv
 numlockx
 obs-studio
-obsidian-bin
+obsidian
 paru
 pavucontrol
 picom
