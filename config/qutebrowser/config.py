@@ -10,6 +10,7 @@ config.load_autoconfig(False)
 
 # ui
 config.source("gruvbox.py")
+c.fonts.default_family = "Hack Nerd Font"
 c.colors.webpage.darkmode.enabled = True
 c.completion.shrink = True
 c.completion.use_best_match = True
