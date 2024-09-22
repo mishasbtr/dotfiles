@@ -39,6 +39,7 @@ c.fileselect.multiple_files.command = [
 c.downloads.location.prompt = True
 c.tabs.show = "always"
 c.tabs.last_close = "default-page"
+c.tabs.width = "10%"
 c.session.lazy_restore = True
 
 # privacy
