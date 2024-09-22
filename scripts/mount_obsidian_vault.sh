@@ -3,7 +3,7 @@
 source "$HOME/scripts/obsidian_vault_config.sh"
 
 is_obsidian_running() {
-  pgrep obsidian >/dev/null 2>&1
+  pgrep -f '/usr/lib/electron30/electron /usr/lib/obsidian/app\.asar' >/dev/null 2>&1
 }
 
 if mountpoint -q "$MOUNT_POINT"; then
@@ -37,7 +37,7 @@ fi
 
 if is_obsidian_running; then
   notify-send "Obsidian is already running. Vault will remain mounted."
-  ~/.config/i3/scripts/apps/run_or_switch.sh obsidian
+  ~/.config/i3/scripts/apps/switch_to_last_of_app.sh obsidian
   exit 0
 else
   $OBSIDIAN_APP "$MOUNT_POINT"
