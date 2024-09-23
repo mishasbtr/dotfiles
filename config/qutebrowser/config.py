@@ -53,6 +53,7 @@ c.url.searchengines = {
     "arch": "https://archlinux.org/packages/?q={}",
     "archwiki": "https://wiki.archlinux.org/?search={}",
     "aur": "https://aur.archlinux.org/packages?O=0&SeB=nd&K={}&outdated=&SB=p&SO=d&PP=50&submit=Go",
+    "consensus": "https://consensus.app/results/?q={}&synthesize=on&copilot=on",
     "gentoo": "https://wiki.gentoo.org/index.php?title=Special%3ASearch&search={}&go=Go",
     "ggl": "https://google.com/search?q={}",
     "gh": "https://github.com/search?q={}&type=repositories",
