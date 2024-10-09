@@ -104,6 +104,7 @@ qbittorrent
 qt6ct
 qutebrowser
 redshift
+ripgrep-all
 rnote
 rofi
 rofi-bluetooth-git
