@@ -86,6 +86,7 @@ nsxiv
 numlockx
 obs-studio
 obsidian
+pandoc
 paru
 pavucontrol
 picom
