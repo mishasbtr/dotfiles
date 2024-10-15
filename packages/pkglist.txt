@@ -105,6 +105,7 @@ qbittorrent
 qt6ct
 qutebrowser
 redshift
+reflector
 ripgrep-all
 rnote
 rofi
