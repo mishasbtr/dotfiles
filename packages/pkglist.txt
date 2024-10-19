@@ -18,6 +18,7 @@ bluetoothctl
 bluez-utils
 caffeine-ng
 calibre
+conan
 cuetools
 ddcui
 ddcutil
