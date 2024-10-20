@@ -92,6 +92,7 @@ paru
 pavucontrol
 picom
 playerctl
+poetry
 polkit-gnome
 polybar
 power-profiles-daemon
