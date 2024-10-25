@@ -1,7 +1,3 @@
-import = [
-  "~/.config/alacritty/alacritty-theme/themes/gruvbox_material_hard_dark.toml",
-  # "~/.config/alacritty/alacritty-theme/themes/gruvbox_material_hard_light.toml",
-]
 
 [window]
 decorations = "none"
@@ -35,3 +31,9 @@ style = "Bold Italic"
 [env]
 term = "xterm-256color"
 WINIT_X11_SCALE_FACTOR = "1.66"
+
+[general]
+import = [
+  "~/.config/alacritty/alacritty-theme/themes/gruvbox_material_hard_dark.toml",
+  # "~/.config/alacritty/alacritty-theme/themes/gruvbox_material_hard_light.toml",
+]
