@@ -8,6 +8,7 @@ end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 local extrasBase = "lazyvim.plugins.extras."
+local ai = extrasBase .. "ai."
 local coding = extrasBase .. "coding."
 local editor = extrasBase .. "editor."
 local formatting = extrasBase .. "formatting."
@@ -28,8 +29,8 @@ require("lazy").setup({
     },
     -- extras
 
-    { import = coding .. "copilot" },
-    { import = coding .. "copilot-chat" },
+    { import = ai .. "copilot" },
+    { import = ai .. "copilot-chat" },
     { import = coding .. "mini-comment" },
     { import = coding .. "mini-surround" },
     { import = coding .. "yanky" },
