@@ -8,6 +8,7 @@ end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 local extrasBase = "lazyvim.plugins.extras."
+
 local ai = extrasBase .. "ai."
 local coding = extrasBase .. "coding."
 local editor = extrasBase .. "editor."
