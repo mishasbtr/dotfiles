@@ -4,9 +4,3 @@
 [submodule "config/rofi/themes/gruvbox"]
 	path = config/rofi/themes/gruvbox
 	url = https://github.com/bardisty/gruvbox-rofi.git
-[submodule "archive/inspiration/maximbaz-dotfiles"]
-	path = archive/inspiration/maximbaz-dotfiles
-	url = https://github.com/maximbaz/dotfiles.git
-[submodule "archive/inspiration/folke-dotfiles"]
-	path = archive/inspiration/folke-dotfiles
-	url = https://github.com/folke/dot.git
