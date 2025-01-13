@@ -75,7 +75,7 @@ mpd-mpris
 mpv
 musnify-mpd
 ncmpcpp
-neovim-git
+neovim
 network-manager-applet
 networkmanager
 networkmanager-openconnect
