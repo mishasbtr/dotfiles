@@ -8,7 +8,6 @@ antigen use oh-my-zsh
 
 antigen bundle git
 antigen bundle command-not-found
-antigen bundle asdf-vm/asdf
 
 # Load bundles from external repos.
 
@@ -28,7 +27,8 @@ export TERMINAL=alacritty
 # setup autosuggestions color
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#a89984"
 
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+export ASDF_DATA_DIR="$HOME/.asdf"
+export PATH="$ASDF_DATA_DIR/shims:$PATH"
 
 eval "$(starship init zsh)"
 
