@@ -7,6 +7,7 @@ ansible-core
 antigen
 arandr
 archlinux-xdg-menu
+asdf-vm
 autorandr
 awesome-terminal-fonts
 bc

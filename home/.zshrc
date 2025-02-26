@@ -8,6 +8,7 @@ antigen use oh-my-zsh
 
 antigen bundle git
 antigen bundle command-not-found
+antigen bundle asdf-vm/asdf
 
 # Load bundles from external repos.
 
@@ -20,20 +21,6 @@ antigen apply
 # set theme to gruvbox dark
 export GTK_THEME=Gruvbox-Dark-BL-LB:dark
 
-# pyenv configuration
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-# pnpm
-export PNPM_HOME="/home/misha/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-
 export VISUAL=nvim
 export EDITOR=nvim
 export TERMINAL=alacritty
@@ -41,11 +28,11 @@ export TERMINAL=alacritty
 # setup autosuggestions color
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#a89984"
 
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
 eval "$(starship init zsh)"
 
 # aliases
 alias gmm="gcm && gl && gco - && gm -"
 alias gmmp="gmm && gp"
 
-# Load Angular CLI autocompletion.
-source <(ng completion script)
