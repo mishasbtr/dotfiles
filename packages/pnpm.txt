@@ -1,4 +1,0 @@
-pnpm
-yarn
-@angular/cli
-neovim

@@ -17,7 +17,7 @@ bitwarden-cli
 blueman
 bluetoothctl
 bluez-utils
-caffeine-ng
+caffeine-ng-git
 calibre
 conan
 cuetools
@@ -98,7 +98,6 @@ polkit-gnome
 polybar
 power-profiles-daemon
 powreprofilectl
-pyenv
 python-adblock
 python-beautifulsoup4
 python-pulsectl
