@@ -8,15 +8,6 @@ return {
       cssls = {},
       cssmodules_ls = {},
       somesass_ls = {},
-      vtsls = {
-        settings = {
-          typescript = {
-            preferences = {
-              importModuleSpecifier = "relative",
-            },
-          },
-        },
-      },
     },
   },
 }
