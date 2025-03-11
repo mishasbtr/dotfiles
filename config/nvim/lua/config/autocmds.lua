@@ -2,27 +2,28 @@
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
 
--- setup blameline
 local autocmd = vim.api.nvim_create_autocmd
+local augroup = require("utils.augroup").augroup
 
-local function augroup(name)
-  return vim.api.nvim_create_augroup("misha-lazyvim_" .. name, { clear = true })
+local function blameline_init()
+  autocmd({ "BufEnter" }, {
+    group = augroup("blameline"),
+    pattern = { "*" },
+    callback = function()
+      vim.cmd("EnableBlameLine")
+    end,
+  })
 end
 
-autocmd({ "BufEnter" }, {
-  group = augroup("blameline"),
-  pattern = { "*" },
-  callback = function()
-    vim.cmd("EnableBlameLine")
-  end,
-})
--- end of blameline stuff
+local function i3_config_highlight_init()
+  autocmd({ "BufReadPost", "BufNew" }, {
+    group = augroup("i3config"),
+    pattern = { "*/i3/*/*config" },
+    callback = function()
+      vim.bo.filetype = "i3config"
+    end,
+  })
+end
 
--- highlight i3 configs
-autocmd({ "BufReadPost", "BufNew" }, {
-  group = augroup("i3config"),
-  pattern = { "*/i3/*/*config" },
-  callback = function()
-    vim.bo.filetype = "i3config"
-  end,
-})
+blameline_init()
+i3_config_highlight_init()
