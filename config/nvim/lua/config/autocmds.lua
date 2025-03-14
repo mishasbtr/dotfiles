@@ -25,5 +25,16 @@ local function i3_config_highlight_init()
   })
 end
 
+local function zim_config_highlight_init()
+  autocmd({ "BufReadPost", "BufNew" }, {
+    group = augroup("zimrc"),
+    pattern = { "*/zimrc" },
+    callback = function()
+      vim.bo.filetype = "bash"
+    end,
+  })
+end
+
 blameline_init()
 i3_config_highlight_init()
+zim_config_highlight_init()
