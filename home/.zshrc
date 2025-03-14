@@ -1,36 +1,27 @@
-source /usr/share/zsh/share/antigen.zsh
+ZIM_HOME=~/.zim
+ZIM_CONFIG_FILE=~/.config/zsh/zimrc
 
-# Load oh-my-zsh library.
+if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
+  if (( ${+commands[curl]} )); then
+    curl -fsSL --create-dirs -o ${ZIM_HOME}/zimfw.zsh \
+        https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
+  else
+    mkdir -p ${ZIM_HOME} && wget -nv -O ${ZIM_HOME}/zimfw.zsh \
+        https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
+  fi
+fi
+# Install missing modules, and update ${ZIM_HOME}/init.zsh if missing or outdated.
+if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZIM_CONFIG_FILE:-${ZDOTDIR:-${HOME}}/.zimrc} ]]; then
+  source ${ZIM_HOME}/zimfw.zsh init -q
+fi
+# Initialize modules.
+source ${ZIM_HOME}/init.zsh
 
-antigen use oh-my-zsh
-
-# Load bundles from the default repo (oh-my-zsh).
-
-antigen bundle git
-antigen bundle command-not-found
-
-# Load bundles from external repos.
-
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-syntax-highlighting
-
-antigen apply
-
-# set theme to gruvbox dark
+# set environment variables
 export GTK_THEME=Gruvbox-Dark-BL-LB:dark
-
 export VISUAL=nvim
 export EDITOR=nvim
 export TERMINAL=alacritty
-
-# setup autosuggestions color
-export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#a89984"
-
-export ASDF_DATA_DIR="$HOME/.asdf"
-export PATH="$ASDF_DATA_DIR/shims:$PATH"
-
-eval "$(starship init zsh)"
 
 # aliases
 alias gmm="gcm && gl && gco - && gm -"

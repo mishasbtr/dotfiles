@@ -4,7 +4,6 @@ alacritty
 alsa-utils
 ansible
 ansible-core
-antigen
 arandr
 archlinux-xdg-menu
 asdf-vm
