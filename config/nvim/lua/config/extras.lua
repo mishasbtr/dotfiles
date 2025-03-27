@@ -14,7 +14,7 @@ return {
   e("ai", { "copilot", "copilot-chat" }),
   e("coding", { "mini-comment", "mini-surround", "yanky" }),
   e("editor", { "aerial", "harpoon2", "inc-rename", "mini-diff", "mini-files", "navic", "refactoring" }),
-  e("formatting", { "black", "prettier" }),
+  e("formatting", { "black" }),
   e("lang", {
     "angular",
     "ansible",
