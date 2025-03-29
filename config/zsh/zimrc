@@ -1,9 +1,10 @@
 zmodule environment
 zmodule input
 
+zmodule utility
 zmodule asdf
 zmodule fzf
-zmodule utility
+zmodule ohmyzsh/ohmyzsh --root plugins/alias-finder
 
 zmodule duration-info
 zmodule git-info
