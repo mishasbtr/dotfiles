@@ -1,7 +1,7 @@
 zmodule environment
 zmodule input
-
 zmodule utility
+
 zmodule asdf
 zmodule fzf
 zmodule ohmyzsh/ohmyzsh --root plugins/alias-finder
@@ -10,10 +10,10 @@ zmodule duration-info
 zmodule git-info
 zmodule prompt-pwd
 
-zmodule zsh-users/zsh-completions --fpath src
 zmodule completion
 zmodule ohmyzsh/ohmyzsh --root plugins/git
 zmodule g-plane/pnpm-shell-completion --on-pull './zplug.zsh'
+zmodule zsh-users/zsh-completions --fpath src
 
 zmodule zsh-users/zsh-syntax-highlighting
 zmodule zsh-users/zsh-autosuggestions
