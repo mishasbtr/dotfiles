@@ -11,6 +11,7 @@ autorandr
 awesome-terminal-fonts
 bc
 beets
+biber
 bitwarden
 bitwarden-cli
 blueman
@@ -64,6 +65,7 @@ librewolf-bin
 lightdm
 lightdm-slick-greeter
 lm_sensors
+lualatex-math
 lxappearance-gtk3
 makemkv
 man-db
@@ -81,8 +83,10 @@ networkmanager
 networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-qt5
+noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
+noto-fonts-extra
 nsxiv
 numlockx
 obs-studio
@@ -125,6 +129,15 @@ stardict-wordnet
 starship
 sysstat
 telegram-desktop
+texlive-basic
+texlive-binextra
+texlive-fontsextra
+texlive-fontsrecommended
+texlive-latex
+texlive-latexextra
+texlive-latexrecommended
+texlive-pictures
+texlive-xetex
 thunar
 thunar-archive-plugin
 thunar-volman
@@ -134,6 +147,7 @@ ttf-bitstream-vera
 ttf-dejavu
 ttf-hack
 ttf-hack-nerd
+ttf-inconsolata
 ttf-liberation
 ttf-opensans
 tumbler
@@ -151,6 +165,7 @@ xbindkeys
 xclip
 xdg-user-dirs-gtk
 xdotool
+xetex
 xf86-input-wacom
 xfce4-terminal
 xkb-switch-git
