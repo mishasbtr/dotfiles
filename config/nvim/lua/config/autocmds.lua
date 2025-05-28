@@ -5,16 +5,6 @@
 local autocmd = vim.api.nvim_create_autocmd
 local augroup = require("utils.augroup").augroup
 
-local function blameline_init()
-  autocmd({ "BufEnter" }, {
-    group = augroup("blameline"),
-    pattern = { "*" },
-    callback = function()
-      vim.cmd("EnableBlameLine")
-    end,
-  })
-end
-
 local function i3_config_highlight_init()
   autocmd({ "BufReadPost", "BufNew" }, {
     group = augroup("i3config"),
@@ -35,6 +25,5 @@ local function zim_config_highlight_init()
   })
 end
 
-blameline_init()
 i3_config_highlight_init()
 zim_config_highlight_init()

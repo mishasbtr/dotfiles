@@ -1,7 +1,9 @@
-require("utils.lazypath").init()
-require("lazy").setup({
+return require("lazy").setup({
   spec = {
-    require("config.theme"),
+    {
+      "LazyVim/LazyVim",
+      import = "lazyvim.plugins",
+    },
     { import = "plugins" },
   },
   defaults = {

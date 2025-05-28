@@ -14,5 +14,14 @@ return {
         header = logo,
       },
     },
+    picker = {
+      hidden = true,
+      sources = {
+        files = {
+          hidden = true,
+        },
+      },
+    },
+    statuscolumn = { enabled = true },
   },
 }

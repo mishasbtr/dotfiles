@@ -3,5 +3,3 @@
 -- Add any additional options here
 
 vim.opt.clipboard = ""
-vim.g.camelcasemotion_key = "\\"
-vim.o.termguicolors = true

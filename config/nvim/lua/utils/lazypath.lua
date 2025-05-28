@@ -1,21 +1,18 @@
+--- Checks if lazy.nvim is installed.
+--- Returns `true` if lazy.nvim is absent and needs to be installed.
+---@param lazypath string
+---@return boolean
+local function check_lazyvim_needs_install(lazypath)
+  local uv = (vim.uv or vim.loop)
+  return not uv.fs_stat(lazypath)
+end
+
 local function init()
   local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-  if not (vim.uv or vim.loop).fs_stat(lazypath) then
-    local lazyrepo = "https://github.com/folke/lazy.nvim.git"
-    local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
-    if vim.v.shell_error ~= 0 then
-      vim.api.nvim_echo({
-        { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-        { out, "WarningMsg" },
-        { "\nPress any key to exit..." },
-      }, true, {})
-      vim.fn.getchar()
-      os.exit(1)
-    end
+  if check_lazyvim_needs_install(lazypath) then
+    require("utils.installer").install_lazy_nvim(lazypath)
   end
   vim.opt.rtp:prepend(lazypath)
 end
 
-return {
-  init = init,
-}
+init()
