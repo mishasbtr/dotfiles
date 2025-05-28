@@ -2,7 +2,6 @@ require("utils.lazypath").init()
 require("lazy").setup({
   spec = {
     require("config.theme"),
-    require("config.extras"),
     { import = "plugins" },
   },
   defaults = {
