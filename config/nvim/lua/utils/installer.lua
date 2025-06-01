@@ -1,6 +1,6 @@
 --- Initializes the lazy.nvim plugin manager.
 ---@param lazypath string
-local function clone_lany_nvim_repo(lazypath)
+local function clone_lazy_nvim_repo(lazypath)
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
   local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
   if vim.v.shell_error ~= 0 then
@@ -15,5 +15,5 @@ local function clone_lany_nvim_repo(lazypath)
 end
 
 return {
-  install_lazy_nvim = clone_lany_nvim_repo,
+  install_lazy_nvim = clone_lazy_nvim_repo,
 }
