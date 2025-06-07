@@ -22,6 +22,7 @@ export GTK_THEME=Gruvbox-Dark-BL-LB:dark
 export VISUAL=nvim
 export EDITOR=nvim
 export TERMINAL=alacritty
+export PATH=$PATH:~/.asdf/installs/nodejs/22.14.0/bin
 
 # aliases
 alias gmm="gcm && gl && gco - && gm -"
