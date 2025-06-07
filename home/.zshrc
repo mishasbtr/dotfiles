@@ -26,3 +26,5 @@ export TERMINAL=alacritty
 # aliases
 alias gmm="gcm && gl && gco - && gm -"
 alias gmmp="gmm && gp"
+
+bindkey -e
