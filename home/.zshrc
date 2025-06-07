@@ -21,8 +21,11 @@ source ${ZIM_HOME}/init.zsh
 export GTK_THEME=Gruvbox-Dark-BL-LB:dark
 export VISUAL=nvim
 export EDITOR=nvim
+
 export TERMINAL=alacritty
 export PATH=$PATH:~/.asdf/installs/nodejs/22.14.0/bin
+
+[ -f ~/keys.sh ] && source ~/keys.sh
 
 # aliases
 alias gmm="gcm && gl && gco - && gm -"
