@@ -96,6 +96,7 @@ paru
 pavucontrol
 picom
 playerctl
+podman
 poetry
 polkit-gnome
 polybar
