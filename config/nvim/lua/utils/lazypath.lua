@@ -10,7 +10,7 @@ end
 local function init()
   local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
   if check_lazyvim_needs_install(lazypath) then
-    require("utils.installer").install_lazy_nvim(lazypath)
+    require("utils.lazynviminstall").install_lazy_nvim(lazypath)
   end
   vim.opt.rtp:prepend(lazypath)
 end
