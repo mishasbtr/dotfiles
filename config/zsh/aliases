@@ -1,0 +1,3 @@
+alias gmm="gcm && gl && gco - && gm -"
+alias gmmp="gmm && gp"
+alias up='paru && source ~/.xprofile && nvim --headless "+Lazy! update" +qa'

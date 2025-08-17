@@ -27,8 +27,6 @@ export PATH=$PATH:~/.asdf/installs/nodejs/22.14.0/bin
 
 [ -f ~/keys.sh ] && source ~/keys.sh
 
-# aliases
-alias gmm="gcm && gl && gco - && gm -"
-alias gmmp="gmm && gp"
+source ~/.config/zsh/aliases
 
 bindkey -e
