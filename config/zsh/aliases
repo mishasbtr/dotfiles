@@ -1,3 +1,13 @@
-alias gmm="gcm && gl && gco - && gm -"
-alias gmmp="gmm && gp"
-alias up='paru && source ~/.xprofile && nvim --headless "+Lazy! update" +qa'
+# git
+alias gmm='gcm && gl && gco - && gm -'
+alias gmmp='gmm && gp'
+
+# paru
+alias p='paru -Syu --noconfirm'
+alias up='paru -Syu --noconfirm && source ~/.xprofile && nvim --headless "+Lazy! update" +qa'
+
+# tmux
+alias t='tmux'
+alias tn='tmux new -s'
+alias ta='tmux attach -t'
+alias tc='tmux new -s config'
