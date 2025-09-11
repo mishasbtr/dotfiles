@@ -1,7 +1,9 @@
 {
-  "extras": [
+  "extrasDisabled": [
     "lazyvim.plugins.extras.ai.copilot",
-    "lazyvim.plugins.extras.ai.copilot-chat",
+    "lazyvim.plugins.extras.ai.copilot-chat"
+  ],
+  "extras": [
     "lazyvim.plugins.extras.coding.luasnip",
     "lazyvim.plugins.extras.coding.mini-comment",
     "lazyvim.plugins.extras.coding.mini-surround",
@@ -47,3 +49,4 @@
   },
   "version": 8
 }
+
