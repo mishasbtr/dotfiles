@@ -8,6 +8,7 @@ alias up='paru -Syu --noconfirm && source ~/.xprofile && nvim --headless "+Lazy!
 
 # tmux
 alias t='tmux'
-alias tn='tmux new -s'
-alias ta='tmux attach -t'
-alias tc='tmux new -s config'
+alias tns='tmux new -s'
+alias ta='tmux a'
+alias taa='ta -t'
+alias tc='taa config || tn config'
