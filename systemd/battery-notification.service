@@ -2,5 +2,5 @@
 Description=Battery Low Notification
 
 [Service]
-ExecStart=/bin/bash /home/misha/scripts/battery_check.sh
+ExecStart=/bin/bash /home/misha/scripts/utils-hardware/battery_check.sh
 
