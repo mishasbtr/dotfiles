@@ -1,5 +1,7 @@
 {
   "extras": [
+    "lazyvim.plugins.extras.ai.copilot",
+    "lazyvim.plugins.extras.ai.copilot-chat",
     "lazyvim.plugins.extras.coding.luasnip",
     "lazyvim.plugins.extras.coding.mini-comment",
     "lazyvim.plugins.extras.coding.mini-surround",
@@ -40,12 +42,10 @@
     "lazyvim.plugins.extras.util.mini-hipatterns",
     "lazyvim.plugins.extras.util.project"
   ],
-  "extrasDisabled": [
-    "lazyvim.plugins.extras.ai.copilot",
-    "lazyvim.plugins.extras.ai.copilot-chat"
-  ],
+  "extrasDisabled": [],
   "news": {
     "NEWS.md": "11866"
   },
   "version": 8
 }
+
