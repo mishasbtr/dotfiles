@@ -1,18 +1,14 @@
 return {
   {
-    "ellisonleao/gruvbox.nvim",
+    "catppuccin/nvim",
     opts = {
-      context = "hard",
-      transparent_mode = true,
-      overrides = {
-        GitSignsCurrentLineBlame = { link = "GruvboxBlue" },
-      },
+      transparent_background = true,
     },
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "catppuccin",
     },
   },
 }

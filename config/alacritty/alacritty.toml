@@ -10,7 +10,7 @@ history = 10_000
 
 
 [font]
-size = 6
+size = 11
 
 [font.normal]
 family = "Hack Nerd Font"
@@ -33,7 +33,4 @@ term = "xterm-256color"
 WINIT_X11_SCALE_FACTOR = "1.66"
 
 [general]
-import = [
-  "~/.config/alacritty/alacritty-theme/themes/gruvbox_material_hard_dark.toml",
-  # "~/.config/alacritty/alacritty-theme/themes/gruvbox_material_hard_light.toml",
-]
+import = ["~/.config/alacritty/alacritty-theme/themes/catppuccin_mocha.toml"]
