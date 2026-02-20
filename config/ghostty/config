@@ -1,0 +1,23 @@
+auto-update = off
+
+font-family = Hack Nerd Font
+font-size = 11.5
+
+theme = Catppuccin Mocha
+
+background-opacity = 0.7
+background-blur = true
+
+window-inherit-working-directory = false
+window-decoration =
+
+confirm-close-surface = false
+
+macos-window-buttons = hidden
+macos-titlebar-style = hidden
+macos-option-as-alt = true
+macos-icon = glass
+
+gtk-titlebar = false
+gtk-wide-tabs = false
+
