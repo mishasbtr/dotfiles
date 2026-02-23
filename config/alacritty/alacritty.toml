@@ -4,10 +4,10 @@ decorations = "none"
 opacity = 0.9
 dynamic_title = true
 blur = true
+option_as_alt = "Both"
 
 [scrolling]
 history = 10_000
-
 
 [font]
 size = 11
